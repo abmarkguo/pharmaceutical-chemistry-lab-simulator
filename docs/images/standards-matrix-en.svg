@@ -1,0 +1,244 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 1000">
+  <defs>
+    <linearGradient id="bgGrad" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#0f172a"/>
+      <stop offset="100%" stop-color="#1e293b"/>
+    </linearGradient>
+    <linearGradient id="domGrad" x1="0" y1="0" x2="0" y2="1"><stop offset="0%" stop-color="#1e3a5f"/><stop offset="100%" stop-color="#1a3450"/></linearGradient>
+    <linearGradient id="intlGrad" x1="0" y1="0" x2="0" y2="1"><stop offset="0%" stop-color="#0d3a36"/><stop offset="100%" stop-color="#0a302d"/></linearGradient>
+    <linearGradient id="safetyGrad" x1="0" y1="0" x2="0" y2="1"><stop offset="0%" stop-color="#4a1e2d"/><stop offset="100%" stop-color="#3d1925"/></linearGradient>
+    <linearGradient id="ichGrad" x1="0" y1="0" x2="0" y2="1"><stop offset="0%" stop-color="#3b0764"/><stop offset="100%" stop-color="#2e0654"/></linearGradient>
+    <linearGradient id="hdrBlue" x1="0" y1="0" x2="0" y2="1"><stop offset="0%" stop-color="#2563eb"/><stop offset="100%" stop-color="#1d4ed8"/></linearGradient>
+    <linearGradient id="hdrGreen" x1="0" y1="0" x2="0" y2="1"><stop offset="0%" stop-color="#16a34a"/><stop offset="100%" stop-color="#15803d"/></linearGradient>
+    <linearGradient id="hdrRed" x1="0" y1="0" x2="0" y2="1"><stop offset="0%" stop-color="#dc2626"/><stop offset="100%" stop-color="#b91c1c"/></linearGradient>
+    <linearGradient id="hdrPurple" x1="0" y1="0" x2="0" y2="1"><stop offset="0%" stop-color="#7c3aed"/><stop offset="100%" stop-color="#6d28d9"/></linearGradient>
+    <linearGradient id="centerGrad" x1="0" y1="0" x2="0" y2="1"><stop offset="0%" stop-color="#fbbf24"/><stop offset="100%" stop-color="#d97706"/></linearGradient>
+    <filter id="dropShadow" x="-10%" y="-10%" width="120%" height="120%">
+      <feGaussianBlur in="SourceAlpha" stdDeviation="3"/>
+      <feOffset dx="0" dy="2"/>
+      <feComponentTransfer><feFuncA type="linear" slope="0.4"/></feComponentTransfer>
+      <feMerge><feMergeNode/><feMergeNode in="SourceGraphic"/></feMerge>
+    </filter>
+    <filter id="glow"><feGaussianBlur stdDeviation="5" result="blur"/><feMerge><feMergeNode in="blur"/><feMergeNode in="SourceGraphic"/></feMerge></filter>
+    <marker id="arrowB" markerWidth="7" markerHeight="7" refX="6" refY="3" orient="auto"><path d="M0,0 L0,6 L6,3 z" fill="#60a5fa"/></marker>
+    <marker id="arrowG" markerWidth="7" markerHeight="7" refX="6" refY="3" orient="auto"><path d="M0,0 L0,6 L6,3 z" fill="#4ade80"/></marker>
+    <marker id="arrowA" markerWidth="7" markerHeight="7" refX="6" refY="3" orient="auto"><path d="M0,0 L0,6 L6,3 z" fill="#fbbf24"/></marker>
+    <marker id="arrowR" markerWidth="7" markerHeight="7" refX="6" refY="3" orient="auto"><path d="M0,0 L0,6 L6,3 z" fill="#f87171"/></marker>
+  </defs>
+
+  <rect width="1200" height="1000" fill="url(#bgGrad)" rx="16"/>
+
+  <!-- TITLE -->
+  <text x="600" y="38" text-anchor="middle" fill="#f1f5f9" font-family="Segoe UI, Helvetica, Arial" font-size="22" font-weight="700">Dual-Standard Compliance Matrix</text>
+  <text x="600" y="60" text-anchor="middle" fill="#94a3b8" font-family="Segoe UI, Helvetica, Arial" font-size="13">Domestic + International Pharmaceutical Standards with Cross-Reference Comparison Table</text>
+
+  <!-- ====== TOP ROW: DOMESTIC vs INTERNATIONAL (4 categories each) ====== -->
+
+  <!-- Domestic Standards Zone -->
+  <rect x="30" y="80" width="560" height="350" rx="14" fill="url(#domGrad)" fill-opacity="0.15" stroke="#2563eb" stroke-width="1.5" stroke-dasharray="6,3"/>
+  <rect x="30" y="80" width="560" height="36" rx="14" fill="url(#hdrBlue)"/>
+  <text x="50" y="104" fill="#ffffff" font-family="Segoe UI, Helvetica, Arial" font-size="14" font-weight="700">DOMESTIC STANDARDS (China)</text>
+  <text x="570" y="104" text-anchor="end" fill="#bfdbfe" font-family="Segoe UI, Helvetica, Arial" font-size="11">国内标准</text>
+
+  <!-- Domestic: Pharmacopoeia -->
+  <rect x="50" y="130" width="520" height="65" rx="8" fill="#1e293b" stroke="#3b82f6" stroke-width="1" filter="url(#dropShadow)"/>
+  <rect x="50" y="130" width="4" height="65" fill="#3b82f6"/>
+  <text x="65" y="148" fill="#60a5fa" font-family="Segoe UI" font-size="12" font-weight="700">Pharmacopoeia of the People's Republic of China</text>
+  <text x="65" y="163" fill="#94a3b8" font-family="Segoe UI" font-size="10">ChP 2020 Edition (Parts I–IV) · 2025 Supplement</text>
+  <text x="65" y="178" fill="#64748b" font-family="Segoe UI" font-size="9">4900+ monographs · General chapters (0400 series for ID, 0500 for assay)</text>
+  <text x="65" y="190" fill="#64748b" font-family="Segoe UI" font-size="9">Published by: China Medical Science Press · Official: NMPA</text>
+
+  <!-- Domestic: GMP -->
+  <rect x="50" y="205" width="520" height="65" rx="8" fill="#1e293b" stroke="#3b82f6" stroke-width="1" filter="url(#dropShadow)"/>
+  <rect x="50" y="205" width="4" height="65" fill="#3b82f6"/>
+  <text x="65" y="223" fill="#60a5fa" font-family="Segoe UI" font-size="12" font-weight="700">Good Manufacturing Practice (GMP)</text>
+  <text x="65" y="238" fill="#94a3b8" font-family="Segoe UI" font-size="10">GMP (2010 Revision) + 6 Appendices (sterile, non-sterile, biological, blood, etc.)</text>
+  <text x="65" y="253" fill="#64748b" font-family="Segoe UI" font-size="9">Annex 1: Sterile Products · Annex 2: Biological · Annex 3: API · Annex 4: Blood Products</text>
+  <text x="65" y="265" fill="#64748b" font-family="Segoe UI" font-size="9">Enforced by: NMPA · Certification: 5-year cycle</text>
+
+  <!-- Domestic: GLP -->
+  <rect x="50" y="280" width="520" height="65" rx="8" fill="#1e293b" stroke="#3b82f6" stroke-width="1" filter="url(#dropShadow)"/>
+  <rect x="50" y="280" width="4" height="65" fill="#3b82f6"/>
+  <text x="65" y="298" fill="#60a5fa" font-family="Segoe UI" font-size="12" font-weight="700">Good Laboratory Practice (GLP)</text>
+  <text x="65" y="313" fill="#94a3b8" font-family="Segoe UI" font-size="10">GLP (2017 Revision) — Non-clinical Safety Studies</text>
+  <text x="65" y="328" fill="#64748b" font-family="Segoe UI" font-size="9">Covers: Toxicity, pharmacokinetics, safety pharmacology, mutagenicity</text>
+  <text x="65" y="340" fill="#64748b" font-family="Segoe UI" font-size="9">Certification: NMPA inspection · Valid: 3 years</text>
+
+  <!-- Domestic: Regulation -->
+  <rect x="50" y="355" width="520" height="65" rx="8" fill="#1e293b" stroke="#3b82f6" stroke-width="1" filter="url(#dropShadow)"/>
+  <rect x="50" y="355" width="4" height="65" fill="#3b82f6"/>
+  <text x="65" y="373" fill="#60a5fa" font-family="Segoe UI" font-size="12" font-weight="700">Regulatory Framework</text>
+  <text x="65" y="388" fill="#94a3b8" font-family="Segoe UI" font-size="10">Drug Administration Law (2019 Rev.) · NMPA Technical Guidelines</text>
+  <text x="65" y="403" fill="#64748b" font-family="Segoe UI" font-size="9">Drug Registration Regulation · Clinical Trial Management · MAH System</text>
+  <text x="65" y="415" fill="#64748b" font-family="Segoe UI" font-size="9">Post-marketing Surveillance · Adverse Event Reporting</text>
+
+  <!-- International Standards Zone -->
+  <rect x="610" y="80" width="560" height="350" rx="14" fill="url(#intlGrad)" fill-opacity="0.15" stroke="#16a34a" stroke-width="1.5" stroke-dasharray="6,3"/>
+  <rect x="610" y="80" width="560" height="36" rx="14" fill="url(#hdrGreen)"/>
+  <text x="630" y="104" fill="#ffffff" font-family="Segoe UI, Helvetica, Arial" font-size="14" font-weight="700">INTERNATIONAL STANDARDS</text>
+  <text x="1150" y="104" text-anchor="end" fill="#ccfbf1" font-family="Segoe UI, Helvetica, Arial" font-size="11">国际标准</text>
+
+  <!-- Intl: Pharmacopoeias -->
+  <rect x="630" y="130" width="520" height="65" rx="8" fill="#1e293b" stroke="#16a34a" stroke-width="1" filter="url(#dropShadow)"/>
+  <rect x="630" y="130" width="4" height="65" fill="#16a34a"/>
+  <text x="645" y="148" fill="#4ade80" font-family="Segoe UI" font-size="12" font-weight="700">Pharmacopoeias (International)</text>
+  <text x="645" y="163" fill="#94a3b8" font-family="Segoe UI" font-size="10">USP-NF (United States) · EP 11.0 (European) · JP 18 (Japanese) · BP 2024 (British)</text>
+  <text x="645" y="178" fill="#64748b" font-family="Segoe UI" font-size="9">USP: &lt;711&gt; Dissolution, &lt;71&gt; Sterility, &lt;467&gt; Residual Solvents, &lt;1058&gt; Instrument Qualification</text>
+  <text x="645" y="190" fill="#64748b" font-family="Segoe UI" font-size="9">EP: 2.9.3 Dissolution, 2.6.1 Sterility, 2.4.24 Residual Solvents — harmonized with ICH</text>
+
+  <!-- Intl: GMP -->
+  <rect x="630" y="205" width="520" height="65" rx="8" fill="#1e293b" stroke="#16a34a" stroke-width="1" filter="url(#dropShadow)"/>
+  <rect x="630" y="205" width="4" height="65" fill="#16a34a"/>
+  <text x="645" y="223" fill="#4ade80" font-family="Segoe UI" font-size="12" font-weight="700">Good Manufacturing Practice (International)</text>
+  <text x="645" y="238" fill="#94a3b8" font-family="Segoe UI" font-size="10">WHO-GMP · FDA cGMP (21 CFR 210/211) · EU-GMP (EudraLex Vol. 4)</text>
+  <text x="645" y="253" fill="#64748b" font-family="Segoe UI" font-size="9">EU-GMP Annex 1: Sterile (2022 Rev.) · FDA Aseptic Processing Guidance</text>
+  <text x="645" y="265" fill="#64748b" font-family="Segoe UI" font-size="9">PIC/S: Pharmaceutical Inspection Co-operation Scheme (global harmonization)</text>
+
+  <!-- Intl: GLP -->
+  <rect x="630" y="280" width="520" height="65" rx="8" fill="#1e293b" stroke="#16a34a" stroke-width="1" filter="url(#dropShadow)"/>
+  <rect x="630" y="280" width="4" height="65" fill="#16a34a"/>
+  <text x="645" y="298" fill="#4ade80" font-family="Segoe UI" font-size="12" font-weight="700">Good Laboratory Practice (International)</text>
+  <text x="645" y="313" fill="#94a3b8" font-family="Segoe UI" font-size="10">OECD-GLP Principles · FDA-GLP (21 CFR Part 58)</text>
+  <text x="645" y="328" fill="#64748b" font-family="Segoe UI" font-size="9">OECD Test Guidelines: TG 408 (90-day oral), TG 423 (acute oral), TG 471 (Ames test)</text>
+  <text x="645" y="340" fill="#64748b" font-family="Segoe UI" font-size="9">OECD MAD (Mutual Acceptance of Data) — recognized in 38+ countries</text>
+
+  <!-- Intl: ICH Guidelines -->
+  <rect x="630" y="355" width="520" height="65" rx="8" fill="#1e293b" stroke="#7c3aed" stroke-width="1" filter="url(#dropShadow)"/>
+  <rect x="630" y="355" width="4" height="65" fill="#7c3aed"/>
+  <text x="645" y="373" fill="#a78bfa" font-family="Segoe UI" font-size="12" font-weight="700">ICH Harmonisation Guidelines</text>
+  <text x="645" y="388" fill="#94a3b8" font-family="Segoe UI" font-size="10">International Council for Harmonisation of Technical Requirements</text>
+  <text x="645" y="403" fill="#64748b" font-family="Segoe UI" font-size="9">Q-Series: Q1 (Stability), Q2 (Validation), Q3 (Impurities), Q7 (GMP API), Q8-Q11 (QbD)</text>
+  <text x="645" y="415" fill="#64748b" font-family="Segoe UI" font-size="9">S-Series: S7A/S7B (Safety Pharmacology), S9 (Oncology) · E-Series: Clinical Efficacy</text>
+
+  <!-- ====== ICH HARMONIZATION CENTER ====== -->
+  <ellipse cx="600" cy="255" rx="55" ry="40" fill="url(#centerGrad)" filter="url(#glow)" stroke="#fde68a" stroke-width="2"/>
+  <text x="600" y="248" text-anchor="middle" fill="#ffffff" font-family="Segoe UI" font-size="16" font-weight="700">ICH</text>
+  <text x="600" y="265" text-anchor="middle" fill="#fef3c7" font-family="Segoe UI" font-size="10" font-weight="600">Harmonization</text>
+  <text x="600" y="278" text-anchor="middle" fill="#fde68a" font-family="Segoe UI" font-size="9">Q · S · E Series</text>
+  <!-- Arrows from ICH to both sides -->
+  <line x1="545" y1="255" x2="490" y2="160" stroke="#fbbf24" stroke-width="1.5" opacity="0.3" marker-end="url(#arrowA)"/>
+  <line x1="545" y1="255" x2="490" y2="235" stroke="#fbbf24" stroke-width="1.5" opacity="0.3" marker-end="url(#arrowA)"/>
+  <line x1="545" y1="255" x2="490" y2="310" stroke="#fbbf24" stroke-width="1.5" opacity="0.3" marker-end="url(#arrowA)"/>
+  <line x1="545" y1="255" x2="490" y2="385" stroke="#fbbf24" stroke-width="1.5" opacity="0.3" marker-end="url(#arrowA)"/>
+  <line x1="655" y1="255" x2="710" y2="160" stroke="#fbbf24" stroke-width="1.5" opacity="0.3" marker-end="url(#arrowA)"/>
+  <line x1="655" y1="255" x2="710" y2="235" stroke="#fbbf24" stroke-width="1.5" opacity="0.3" marker-end="url(#arrowA)"/>
+  <line x1="655" y1="255" x2="710" y2="310" stroke="#fbbf24" stroke-width="1.5" opacity="0.3" marker-end="url(#arrowA)"/>
+  <line x1="655" y1="255" x2="710" y2="385" stroke="#fbbf24" stroke-width="1.5" opacity="0.3" marker-end="url(#arrowA)"/>
+
+  <!-- ====== SAFETY & ETHICS ZONE (Full width) ====== -->
+  <rect x="30" y="445" width="1140" height="110" rx="14" fill="url(#safetyGrad)" fill-opacity="0.15" stroke="#dc2626" stroke-width="1.5" stroke-dasharray="6,3"/>
+  <rect x="30" y="445" width="1140" height="36" rx="14" fill="url(#hdrRed)"/>
+  <text x="50" y="469" fill="#ffffff" font-family="Segoe UI, Helvetica, Arial" font-size="14" font-weight="700">SAFETY & ETHICS STANDARDS (Cross-Cutting Framework)</text>
+
+  <rect x="50" y="495" width="215" height="50" rx="8" fill="#1e293b" stroke="#f87171" stroke-width="1"/>
+  <text x="157" y="513" text-anchor="middle" fill="#fca5a5" font-family="Segoe UI" font-size="11" font-weight="700">GHS Classification</text>
+  <text x="157" y="528" text-anchor="middle" fill="#94a3b8" font-family="Segoe UI" font-size="9">Hazard pictograms · H/P codes</text>
+  <text x="157" y="540" text-anchor="middle" fill="#64748b" font-family="Segoe UI" font-size="8">UN Globally Harmonized System</text>
+
+  <rect x="280" y="495" width="215" height="50" rx="8" fill="#1e293b" stroke="#f87171" stroke-width="1"/>
+  <text x="387" y="513" text-anchor="middle" fill="#fca5a5" font-family="Segoe UI" font-size="11" font-weight="700">EHS / OSHA</text>
+  <text x="387" y="528" text-anchor="middle" fill="#94a3b8" font-family="Segoe UI" font-size="9">Lab safety · Chemical hygiene plan</text>
+  <text x="387" y="540" text-anchor="middle" fill="#64748b" font-family="Segoe UI" font-size="8">29 CFR 1910.1450 · PPE standards</text>
+
+  <rect x="510" y="495" width="215" height="50" rx="8" fill="#1e293b" stroke="#f87171" stroke-width="1"/>
+  <text x="617" y="513" text-anchor="middle" fill="#fca5a5" font-family="Segoe UI" font-size="11" font-weight="700">Biosafety BSL-1 to BSL-4</text>
+  <text x="617" y="528" text-anchor="middle" fill="#94a3b8" font-family="Segoe UI" font-size="9">Containment levels · Decon</text>
+  <text x="617" y="540" text-anchor="middle" fill="#64748b" font-family="Segoe UI" font-size="8">WHO Lab Biosafety Manual · CDC BMBL</text>
+
+  <rect x="740" y="495" width="200" height="50" rx="8" fill="#1e293b" stroke="#f87171" stroke-width="1"/>
+  <text x="840" y="513" text-anchor="middle" fill="#fca5a5" font-family="Segoe UI" font-size="11" font-weight="700">3R Principles</text>
+  <text x="840" y="528" text-anchor="middle" fill="#94a3b8" font-family="Segoe UI" font-size="9">Replace · Reduce · Refine</text>
+  <text x="840" y="540" text-anchor="middle" fill="#64748b" font-family="Segoe UI" font-size="8">Russell & Burch (1959)</text>
+
+  <rect x="955" y="495" width="195" height="50" rx="8" fill="#1e293b" stroke="#f87171" stroke-width="1"/>
+  <text x="1052" y="513" text-anchor="middle" fill="#fca5a5" font-family="Segoe UI" font-size="11" font-weight="700">IACUC + AVMA</text>
+  <text x="1052" y="528" text-anchor="middle" fill="#94a3b8" font-family="Segoe UI" font-size="9">Ethics review · Euthanasia</text>
+  <text x="1052" y="540" text-anchor="middle" fill="#64748b" font-family="Segoe UI" font-size="8">Animal welfare compliance</text>
+
+  <!-- ====== COMPARISON TABLE ====== -->
+  <text x="600" y="585" text-anchor="middle" fill="#cbd5e1" font-family="Segoe UI, Helvetica, Arial" font-size="16" font-weight="700">Key Standard Cross-Reference Comparison</text>
+  <text x="600" y="603" text-anchor="middle" fill="#64748b" font-family="Segoe UI, Helvetica, Arial" font-size="11">How the same analytical test is specified across different pharmacopoeias</text>
+
+  <!-- Table header -->
+  <rect x="50" y="615" width="1100" height="32" rx="6" fill="#334155"/>
+  <text x="170" y="636" text-anchor="middle" fill="#e2e8f0" font-family="Segoe UI" font-size="11" font-weight="700">Test / Topic</text>
+  <text x="380" y="636" text-anchor="middle" fill="#bfdbfe" font-family="Segoe UI" font-size="11" font-weight="700">ChP (China)</text>
+  <text x="560" y="636" text-anchor="middle" fill="#86efac" font-family="Segoe UI" font-size="11" font-weight="700">USP (USA)</text>
+  <text x="740" y="636" text-anchor="middle" fill="#ccfbf1" font-family="Segoe UI" font-size="11" font-weight="700">EP (Europe)</text>
+  <text x="920" y="636" text-anchor="middle" fill="#fde68a" font-family="Segoe UI" font-size="11" font-weight="700">ICH Reference</text>
+  <text x="1080" y="636" text-anchor="middle" fill="#fdba74" font-family="Segoe UI" font-size="11" font-weight="700">Key Difference</text>
+
+  <!-- Row 1: Dissolution -->
+  <rect x="50" y="647" width="1100" height="28" fill="#1e293b"/>
+  <text x="170" y="665" text-anchor="middle" fill="#e2e8f0" font-family="Segoe UI" font-size="10">Dissolution Test</text>
+  <text x="380" y="665" text-anchor="middle" fill="#94a3b8" font-family="Segoe UI" font-size="10">0931 (Apparatus 1–4)</text>
+  <text x="560" y="665" text-anchor="middle" fill="#94a3b8" font-family="Segoe UI" font-size="10">&lt;711&gt;</text>
+  <text x="740" y="665" text-anchor="middle" fill="#94a3b8" font-family="Segoe UI" font-size="10">2.9.3</text>
+  <text x="920" y="665" text-anchor="middle" fill="#94a3b8" font-family="Segoe UI" font-size="10">—</text>
+  <text x="1080" y="665" text-anchor="middle" fill="#fb923c" font-family="Segoe UI" font-size="9">Media volume / judgment criteria</text>
+
+  <!-- Row 2: Sterility -->
+  <rect x="50" y="675" width="1100" height="28" fill="#0f172a"/>
+  <text x="170" y="693" text-anchor="middle" fill="#e2e8f0" font-family="Segoe UI" font-size="10">Sterility Test</text>
+  <text x="380" y="693" text-anchor="middle" fill="#94a3b8" font-family="Segoe UI" font-size="10">1101</text>
+  <text x="560" y="693" text-anchor="middle" fill="#94a3b8" font-family="Segoe UI" font-size="10">&lt;71&gt;</text>
+  <text x="740" y="693" text-anchor="middle" fill="#94a3b8" font-family="Segoe UI" font-size="10">2.6.1</text>
+  <text x="920" y="693" text-anchor="middle" fill="#94a3b8" font-family="Segoe UI" font-size="10">—</text>
+  <text x="1080" y="693" text-anchor="middle" fill="#fb923c" font-family="Segoe UI" font-size="9">Suitability test method</text>
+
+  <!-- Row 3: Impurities -->
+  <rect x="50" y="703" width="1100" height="28" fill="#1e293b"/>
+  <text x="170" y="721" text-anchor="middle" fill="#e2e8f0" font-family="Segoe UI" font-size="10">Impurities (Organic)</text>
+  <text x="380" y="721" text-anchor="middle" fill="#94a3b8" font-family="Segoe UI" font-size="10">ChP 0861 (general)</text>
+  <text x="560" y="721" text-anchor="middle" fill="#94a3b8" font-family="Segoe UI" font-size="10">&lt;476&gt;</text>
+  <text x="740" y="721" text-anchor="middle" fill="#94a3b8" font-family="Segoe UI" font-size="10">2.4.24</text>
+  <text x="920" y="721" text-anchor="middle" fill="#fde68a" font-family="Segoe UI" font-size="10">Q3A (API) / Q3B (DP)</text>
+  <text x="1080" y="721" text-anchor="middle" fill="#fb923c" font-family="Segoe UI" font-size="9">Reporting threshold format</text>
+
+  <!-- Row 4: Residual Solvents -->
+  <rect x="50" y="731" width="1100" height="28" fill="#0f172a"/>
+  <text x="170" y="749" text-anchor="middle" fill="#e2e8f0" font-family="Segoe UI" font-size="10">Residual Solvents</text>
+  <text x="380" y="749" text-anchor="middle" fill="#94a3b8" font-family="Segoe UI" font-size="10">0861</text>
+  <text x="560" y="749" text-anchor="middle" fill="#94a3b8" font-family="Segoe UI" font-size="10">&lt;467&gt;</text>
+  <text x="740" y="749" text-anchor="middle" fill="#94a3b8" font-family="Segoe UI" font-size="10">2.4.24</text>
+  <text x="920" y="749" text-anchor="middle" fill="#fde68a" font-family="Segoe UI" font-size="10">Q3C (Class 1–3 limits)</text>
+  <text x="1080" y="749" text-anchor="middle" fill="#fb923c" font-family="Segoe UI" font-size="9">Class definitions harmonized</text>
+
+  <!-- Row 5: Stability -->
+  <rect x="50" y="759" width="1100" height="28" fill="#1e293b"/>
+  <text x="170" y="777" text-anchor="middle" fill="#e2e8f0" font-family="Segoe UI" font-size="10">Stability Testing</text>
+  <text x="380" y="777" text-anchor="middle" fill="#94a3b8" font-family="Segoe UI" font-size="10">9001 (principles)</text>
+  <text x="560" y="777" text-anchor="middle" fill="#94a3b8" font-family="Segoe UI" font-size="10">&lt;1150&gt;</text>
+  <text x="740" y="777" text-anchor="middle" fill="#94a3b8" font-family="Segoe UI" font-size="10">5.00 (general)</text>
+  <text x="920" y="777" text-anchor="middle" fill="#fde68a" font-family="Segoe UI" font-size="10">Q1A(R2) / Q1B / Q1E</text>
+  <text x="1080" y="777" text-anchor="middle" fill="#fb923c" font-family="Segoe UI" font-size="9">Study design (ICH-aligned)</text>
+
+  <!-- Row 6: Method Validation -->
+  <rect x="50" y="787" width="1100" height="28" fill="#0f172a"/>
+  <text x="170" y="805" text-anchor="middle" fill="#e2e8f0" font-family="Segoe UI" font-size="10">Method Validation</text>
+  <text x="380" y="805" text-anchor="middle" fill="#94a3b8" font-family="Segoe UI" font-size="10">9101 (guidelines)</text>
+  <text x="560" y="805" text-anchor="middle" fill="#94a3b8" font-family="Segoe UI" font-size="10">&lt;1225&gt;</text>
+  <text x="740" y="805" text-anchor="middle" fill="#94a3b8" font-family="Segoe UI" font-size="10">2.2.46 (chromatography)</text>
+  <text x="920" y="805" text-anchor="middle" fill="#fde68a" font-family="Segoe UI" font-size="10">Q2(R2)</text>
+  <text x="1080" y="805" text-anchor="middle" fill="#fb923c" font-family="Segoe UI" font-size="9">Parameters largely aligned</text>
+
+  <!-- Row 7: Sterile GMP -->
+  <rect x="50" y="815" width="1100" height="28" fill="#1e293b"/>
+  <text x="170" y="833" text-anchor="middle" fill="#e2e8f0" font-family="Segoe UI" font-size="10">Sterile Manufacturing</text>
+  <text x="380" y="833" text-anchor="middle" fill="#94a3b8" font-family="Segoe UI" font-size="10">GMP Annex 1 (2011)</text>
+  <text x="560" y="833" text-anchor="middle" fill="#94a3b8" font-family="Segoe UI" font-size="10">21 CFR 211 + Aseptic Guide</text>
+  <text x="740" y="833" text-anchor="middle" fill="#94a3b8" font-family="Segoe UI" font-size="10">EU-GMP Annex 1 (2022 Rev.)</text>
+  <text x="920" y="833" text-anchor="middle" fill="#fde68a" font-family="Segoe UI" font-size="10">Q9 (QRM) / Q10 (PQS)</text>
+  <text x="1080" y="833" text-anchor="middle" fill="#fb923c" font-family="Segoe UI" font-size="9">EU 2022 Rev. = most stringent</text>
+
+  <!-- Table border -->
+  <rect x="50" y="615" width="1100" height="228" rx="6" fill="none" stroke="#475569" stroke-width="1"/>
+
+  <!-- ====== FOOTER ====== -->
+  <rect x="50" y="860" width="1100" height="40" rx="8" fill="#1e293b" stroke="#475569" stroke-width="0.5"/>
+  <text x="600" y="878" text-anchor="middle" fill="#94a3b8" font-family="Segoe UI" font-size="10" font-weight="600">The simulator automatically references the applicable standard clause at each simulation stage</text>
+  <text x="600" y="893" text-anchor="middle" fill="#64748b" font-family="Segoe UI" font-size="9">Dual-standard mode: students see both ChP and USP/EP requirements side-by-side for each operation</text>
+
+  <text x="600" y="930" text-anchor="middle" fill="#475569" font-family="Segoe UI" font-size="9">OpenClaw Skill v1.0  |  Dual-Standard Compliance Matrix  |  MIT License</text>
+  <text x="600" y="950" text-anchor="middle" fill="#334155" font-family="Segoe UI" font-size="8">ChP = Chinese Pharmacopoeia  |  USP = United States Pharmacopeia  |  EP = European Pharmacopoeia  |  ICH = International Council for Harmonisation  |  GMP = Good Manufacturing Practice  |  GLP = Good Laboratory Practice  |  NMPA = National Medical Products Administration  |  GHS = Globally Harmonized System  |  EHS = Environment, Health & Safety  |  OSHA = Occupational Safety and Health Administration  |  3R = Replace, Reduce, Refine  |  IACUC = Institutional Animal Care and Use Committee  |  AVMA = American Veterinary Medical Association</text>
+</svg>
