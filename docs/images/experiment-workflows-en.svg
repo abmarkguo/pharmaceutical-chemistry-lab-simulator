@@ -49,7 +49,7 @@
   <!-- Col 3: Pharmaceutics -->
   <rect x="710" y="80" width="320" height="60" rx="10" fill="url(#hdrTeal)" filter="url(#dropShadow)"/>
   <text x="870" y="105" text-anchor="middle" fill="#ffffff" font-family="Segoe UI, Helvetica, Arial" font-size="15" font-weight="700">Pharmaceutics</text>
-  <text x="870" y="124" text-anchor="middle" fill="#ccfbf1" font-family="Segoe UI, Helvetica, Arial" font-size="11">8 Stages · Formulation & GMP</text>
+  <text x="870" y="124" text-anchor="middle" fill="#ccfbf1" font-family="Segoe UI, Helvetica, Arial" font-size="11">8 Stages · Formulation &amp; GMP</text>
 
   <!-- Col 4: Pharmacology/Toxicology -->
   <rect x="1050" y="80" width="320" height="60" rx="10" fill="url(#hdrPurple)" filter="url(#dropShadow)"/>
@@ -60,7 +60,7 @@
   <!-- Stage 1 -->
   <rect x="40" y="155" width="300" height="50" rx="8" fill="url(#boxBlue)" stroke="#3b82f6" stroke-width="1.5" filter="url(#dropShadow)"/>
   <circle cx="60" cy="180" r="12" fill="#2563eb"/><text x="60" y="184" text-anchor="middle" fill="#fff" font-family="Segoe UI" font-size="10" font-weight="700">1</text>
-  <text x="80" y="174" fill="#bfdbfe" font-family="Segoe UI" font-size="11" font-weight="600">Preparation & Planning</text>
+  <text x="80" y="174" fill="#bfdbfe" font-family="Segoe UI" font-size="11" font-weight="600">Preparation &amp; Planning</text>
   <text x="80" y="190" fill="#94a3b8" font-family="Segoe UI" font-size="9">Literature review, reaction scheme, stoichiometry</text>
   <text x="80" y="200" fill="#64748b" font-family="Segoe UI" font-size="8">Std: ICH Q7 · GMP Annex 1</text>
   <line x1="190" y1="205" x2="190" y2="215" stroke="#60a5fa" stroke-width="1.5" marker-end="url(#arrowB)"/>
@@ -76,7 +76,7 @@
   <!-- Stage 3 -->
   <rect x="40" y="285" width="300" height="50" rx="8" fill="url(#boxBlue)" stroke="#3b82f6" stroke-width="1.5" filter="url(#dropShadow)"/>
   <circle cx="60" cy="310" r="12" fill="#2563eb"/><text x="60" y="314" text-anchor="middle" fill="#fff" font-family="Segoe UI" font-size="10" font-weight="700">3</text>
-  <text x="80" y="304" fill="#bfdbfe" font-family="Segoe UI" font-size="11" font-weight="600">Charging & Reaction Initiation</text>
+  <text x="80" y="304" fill="#bfdbfe" font-family="Segoe UI" font-size="11" font-weight="600">Charging &amp; Reaction Initiation</text>
   <text x="80" y="320" fill="#94a3b8" font-family="Segoe UI" font-size="9">Reagent addition order, temperature, catalyst</text>
   <text x="80" y="330" fill="#fbbf24" font-family="Segoe UI" font-size="8" font-weight="600">⚠ Exothermic / pyrophoric hazards</text>
   <line x1="190" y1="335" x2="190" y2="345" stroke="#60a5fa" stroke-width="1.5" marker-end="url(#arrowB)"/>
@@ -92,7 +92,7 @@
   <!-- Stage 5 -->
   <rect x="40" y="415" width="300" height="50" rx="8" fill="url(#boxBlue)" stroke="#3b82f6" stroke-width="1.5" filter="url(#dropShadow)"/>
   <circle cx="60" cy="440" r="12" fill="#2563eb"/><text x="60" y="444" text-anchor="middle" fill="#fff" font-family="Segoe UI" font-size="10" font-weight="700">5</text>
-  <text x="80" y="434" fill="#bfdbfe" font-family="Segoe UI" font-size="11" font-weight="600">Workup & Purification</text>
+  <text x="80" y="434" fill="#bfdbfe" font-family="Segoe UI" font-size="11" font-weight="600">Workup &amp; Purification</text>
   <text x="80" y="450" fill="#94a3b8" font-family="Segoe UI" font-size="9">Quench, extraction, column chromatography</text>
   <text x="80" y="460" fill="#64748b" font-family="Segoe UI" font-size="8">Recrystallization / distillation</text>
   <line x1="190" y1="465" x2="190" y2="475" stroke="#60a5fa" stroke-width="1.5" marker-end="url(#arrowB)"/>
@@ -100,7 +100,7 @@
   <!-- Stage 6 -->
   <rect x="40" y="480" width="300" height="50" rx="8" fill="url(#boxBlue)" stroke="#3b82f6" stroke-width="1.5" filter="url(#dropShadow)"/>
   <circle cx="60" cy="505" r="12" fill="#2563eb"/><text x="60" y="509" text-anchor="middle" fill="#fff" font-family="Segoe UI" font-size="10" font-weight="700">6</text>
-  <text x="80" y="499" fill="#bfdbfe" font-family="Segoe UI" font-size="11" font-weight="600">Characterization & Structure ID</text>
+  <text x="80" y="499" fill="#bfdbfe" font-family="Segoe UI" font-size="11" font-weight="600">Characterization &amp; Structure ID</text>
   <text x="80" y="515" fill="#94a3b8" font-family="Segoe UI" font-size="9">NMR, MS, IR, UV, melting point, elemental analysis</text>
   <text x="80" y="525" fill="#64748b" font-family="Segoe UI" font-size="8">Std: ChP 0400 series / USP &lt;197&gt;</text>
   <line x1="190" y1="530" x2="190" y2="540" stroke="#60a5fa" stroke-width="1.5" marker-end="url(#arrowB)"/>
@@ -108,14 +108,14 @@
   <!-- Stage 7 -->
   <rect x="40" y="545" width="300" height="50" rx="8" fill="url(#boxBlue)" stroke="#3b82f6" stroke-width="1.5" filter="url(#dropShadow)"/>
   <circle cx="60" cy="570" r="12" fill="#2563eb"/><text x="60" y="574" text-anchor="middle" fill="#fff" font-family="Segoe UI" font-size="10" font-weight="700">7</text>
-  <text x="80" y="564" fill="#bfdbfe" font-family="Segoe UI" font-size="11" font-weight="600">Cleanup & Waste Disposal</text>
+  <text x="80" y="564" fill="#bfdbfe" font-family="Segoe UI" font-size="11" font-weight="600">Cleanup &amp; Waste Disposal</text>
   <text x="80" y="580" fill="#94a3b8" font-family="Segoe UI" font-size="9">Glassware cleaning, waste segregation, EHS log</text>
   <text x="80" y="590" fill="#64748b" font-family="Segoe UI" font-size="8">Std: GHS disposal categories</text>
 
   <!-- ====== DRUG ANALYSIS (6 stages) ====== -->
   <rect x="380" y="155" width="300" height="50" rx="8" fill="url(#boxCyan)" stroke="#0891b2" stroke-width="1.5" filter="url(#dropShadow)"/>
   <circle cx="400" cy="180" r="12" fill="#0891b2"/><text x="400" y="184" text-anchor="middle" fill="#fff" font-family="Segoe UI" font-size="10" font-weight="700">1</text>
-  <text x="420" y="174" fill="#cffafe" font-family="Segoe UI" font-size="11" font-weight="600">Method Selection & Validation</text>
+  <text x="420" y="174" fill="#cffafe" font-family="Segoe UI" font-size="11" font-weight="600">Method Selection &amp; Validation</text>
   <text x="420" y="190" fill="#94a3b8" font-family="Segoe UI" font-size="9">USP/ChP method or develop new (ICH Q2)</text>
   <text x="420" y="200" fill="#64748b" font-family="Segoe UI" font-size="8">Specificity / linearity / range / precision</text>
   <line x1="530" y1="205" x2="530" y2="215" stroke="#22d3ee" stroke-width="1.5" marker-end="url(#arrowC)"/>
@@ -138,19 +138,19 @@
   <circle cx="400" cy="375" r="12" fill="#0891b2"/><text x="400" y="379" text-anchor="middle" fill="#fff" font-family="Segoe UI" font-size="10" font-weight="700">4</text>
   <text x="420" y="369" fill="#cffafe" font-family="Segoe UI" font-size="11" font-weight="600">Assay / Content Determination</text>
   <text x="420" y="385" fill="#94a3b8" font-family="Segoe UI" font-size="9">HPLC, GC, UV-Vis, titration, Karl Fischer</text>
-  <text x="420" y="395" fill="#64748b" font-family="Segoe UI" font-size="8">Decision: injection sequence & integration</text>
+  <text x="420" y="395" fill="#64748b" font-family="Segoe UI" font-size="8">Decision: injection sequence &amp; integration</text>
   <line x1="530" y1="400" x2="530" y2="410" stroke="#22d3ee" stroke-width="1.5" marker-end="url(#arrowC)"/>
 
   <rect x="380" y="415" width="300" height="50" rx="8" fill="url(#boxCyan)" stroke="#0891b2" stroke-width="1.5" filter="url(#dropShadow)"/>
   <circle cx="400" cy="440" r="12" fill="#0891b2"/><text x="400" y="444" text-anchor="middle" fill="#fff" font-family="Segoe UI" font-size="10" font-weight="700">5</text>
-  <text x="420" y="434" fill="#cffafe" font-family="Segoe UI" font-size="11" font-weight="600">Data Processing & Statistics</text>
+  <text x="420" y="434" fill="#cffafe" font-family="Segoe UI" font-size="11" font-weight="600">Data Processing &amp; Statistics</text>
   <text x="420" y="450" fill="#94a3b8" font-family="Segoe UI" font-size="9">Peak integration, RSD, confidence interval</text>
   <text x="420" y="460" fill="#64748b" font-family="Segoe UI" font-size="8">Std: ICH Q2(R2) acceptance criteria</text>
   <line x1="530" y1="465" x2="530" y2="475" stroke="#22d3ee" stroke-width="1.5" marker-end="url(#arrowC)"/>
 
   <rect x="380" y="480" width="300" height="50" rx="8" fill="url(#boxCyan)" stroke="#0891b2" stroke-width="1.5" filter="url(#dropShadow)"/>
   <circle cx="400" cy="505" r="12" fill="#0891b2"/><text x="400" y="509" text-anchor="middle" fill="#fff" font-family="Segoe UI" font-size="10" font-weight="700">6</text>
-  <text x="420" y="499" fill="#cffafe" font-family="Segoe UI" font-size="11" font-weight="600">Result Judgment & Reporting</text>
+  <text x="420" y="499" fill="#cffafe" font-family="Segoe UI" font-size="11" font-weight="600">Result Judgment &amp; Reporting</text>
   <text x="420" y="515" fill="#94a3b8" font-family="Segoe UI" font-size="9">Conformity vs specification, OOS investigation</text>
   <text x="420" y="525" fill="#64748b" font-family="Segoe UI" font-size="8">Output: Certificate of Analysis</text>
 
@@ -193,7 +193,7 @@
 
   <rect x="720" y="485" width="300" height="42" rx="8" fill="url(#boxTeal)" stroke="#0d9488" stroke-width="1.5" filter="url(#dropShadow)"/>
   <circle cx="740" cy="506" r="12" fill="#0d9488"/><text x="740" y="510" text-anchor="middle" fill="#fff" font-family="Segoe UI" font-size="10" font-weight="700">7</text>
-  <text x="760" y="502" fill="#ccfbf1" font-family="Segoe UI" font-size="11" font-weight="600">Packaging & Labeling</text>
+  <text x="760" y="502" fill="#ccfbf1" font-family="Segoe UI" font-size="11" font-weight="600">Packaging &amp; Labeling</text>
   <text x="760" y="517" fill="#94a3b8" font-family="Segoe UI" font-size="9">Primary/secondary packaging, serialization</text>
   <line x1="870" y1="527" x2="870" y2="537" stroke="#2dd4bf" stroke-width="1.5" marker-end="url(#arrowT)"/>
 
@@ -205,7 +205,7 @@
   <!-- ====== PHARMACOLOGY/TOXICOLOGY (7 stages) ====== -->
   <rect x="1060" y="155" width="300" height="50" rx="8" fill="url(#boxPurple)" stroke="#7c3aed" stroke-width="1.5" filter="url(#dropShadow)"/>
   <circle cx="1080" cy="180" r="12" fill="#7c3aed"/><text x="1080" y="184" text-anchor="middle" fill="#fff" font-family="Segoe UI" font-size="10" font-weight="700">1</text>
-  <text x="1100" y="174" fill="#ede9fe" font-family="Segoe UI" font-size="11" font-weight="600">Study Design & Protocol</text>
+  <text x="1100" y="174" fill="#ede9fe" font-family="Segoe UI" font-size="11" font-weight="600">Study Design &amp; Protocol</text>
   <text x="1100" y="190" fill="#94a3b8" font-family="Segoe UI" font-size="9">Objective, endpoints, groups, sample size (3R)</text>
   <text x="1100" y="200" fill="#64748b" font-family="Segoe UI" font-size="8">Std: GLP (2017) / OECD Test Guidelines</text>
   <line x1="1210" y1="205" x2="1210" y2="215" stroke="#a78bfa" stroke-width="1.5" marker-end="url(#arrowP)"/>
@@ -219,35 +219,35 @@
 
   <rect x="1060" y="285" width="300" height="50" rx="8" fill="url(#boxPurple)" stroke="#7c3aed" stroke-width="1.5" filter="url(#dropShadow)"/>
   <circle cx="1080" cy="310" r="12" fill="#7c3aed"/><text x="1080" y="314" text-anchor="middle" fill="#fff" font-family="Segoe UI" font-size="10" font-weight="700">3</text>
-  <text x="1100" y="304" fill="#ede9fe" font-family="Segoe UI" font-size="11" font-weight="600">Dosing & Administration</text>
+  <text x="1100" y="304" fill="#ede9fe" font-family="Segoe UI" font-size="11" font-weight="600">Dosing &amp; Administration</text>
   <text x="1100" y="320" fill="#94a3b8" font-family="Segoe UI" font-size="9">Route, dose calculation, frequency, vehicle control</text>
   <text x="1100" y="330" fill="#fbbf24" font-family="Segoe UI" font-size="8" font-weight="600">⚠ Max tolerated dose / acute toxicity limit</text>
   <line x1="1210" y1="335" x2="1210" y2="345" stroke="#a78bfa" stroke-width="1.5" marker-end="url(#arrowP)"/>
 
   <rect x="1060" y="350" width="300" height="50" rx="8" fill="url(#boxPurple)" stroke="#7c3aed" stroke-width="1.5" filter="url(#dropShadow)"/>
   <circle cx="1080" cy="375" r="12" fill="#7c3aed"/><text x="1080" y="379" text-anchor="middle" fill="#fff" font-family="Segoe UI" font-size="10" font-weight="700">4</text>
-  <text x="1100" y="369" fill="#ede9fe" font-family="Segoe UI" font-size="11" font-weight="600">Observation & Monitoring</text>
+  <text x="1100" y="369" fill="#ede9fe" font-family="Segoe UI" font-size="11" font-weight="600">Observation &amp; Monitoring</text>
   <text x="1100" y="385" fill="#94a3b8" font-family="Segoe UI" font-size="9">Clinical signs, body weight, behavior, biomarkers</text>
   <text x="1100" y="395" fill="#a78bfa" font-family="Segoe UI" font-size="8" font-weight="600">3R: Refine — humane endpoints enforced</text>
   <line x1="1210" y1="400" x2="1210" y2="410" stroke="#a78bfa" stroke-width="1.5" marker-end="url(#arrowP)"/>
 
   <rect x="1060" y="415" width="300" height="50" rx="8" fill="url(#boxPurple)" stroke="#7c3aed" stroke-width="1.5" filter="url(#dropShadow)"/>
   <circle cx="1080" cy="440" r="12" fill="#7c3aed"/><text x="1080" y="444" text-anchor="middle" fill="#fff" font-family="Segoe UI" font-size="10" font-weight="700">5</text>
-  <text x="1100" y="434" fill="#ede9fe" font-family="Segoe UI" font-size="11" font-weight="600">Sample Collection & Analysis</text>
+  <text x="1100" y="434" fill="#ede9fe" font-family="Segoe UI" font-size="11" font-weight="600">Sample Collection &amp; Analysis</text>
   <text x="1100" y="450" fill="#94a3b8" font-family="Segoe UI" font-size="9">Blood, tissue, organ harvest; histopathology</text>
   <text x="1100" y="460" fill="#a78bfa" font-family="Segoe UI" font-size="8" font-weight="600">3R: Reduce — minimize animal numbers</text>
   <line x1="1210" y1="465" x2="1210" y2="475" stroke="#a78bfa" stroke-width="1.5" marker-end="url(#arrowP)"/>
 
   <rect x="1060" y="480" width="300" height="50" rx="8" fill="url(#boxPurple)" stroke="#7c3aed" stroke-width="1.5" filter="url(#dropShadow)"/>
   <circle cx="1080" cy="505" r="12" fill="#7c3aed"/><text x="1080" y="509" text-anchor="middle" fill="#fff" font-family="Segoe UI" font-size="10" font-weight="700">6</text>
-  <text x="1100" y="499" fill="#ede9fe" font-family="Segoe UI" font-size="11" font-weight="600">Data Analysis & Safety Evaluation</text>
+  <text x="1100" y="499" fill="#ede9fe" font-family="Segoe UI" font-size="11" font-weight="600">Data Analysis &amp; Safety Evaluation</text>
   <text x="1100" y="515" fill="#94a3b8" font-family="Segoe UI" font-size="9">NOAEL/LOAEL, statistical analysis, risk assessment</text>
   <text x="1100" y="525" fill="#64748b" font-family="Segoe UI" font-size="8">Std: ICH S7A/S7B, OECD 423/425</text>
   <line x1="1210" y1="530" x2="1210" y2="540" stroke="#a78bfa" stroke-width="1.5" marker-end="url(#arrowP)"/>
 
   <rect x="1060" y="545" width="300" height="50" rx="8" fill="url(#boxPurple)" stroke="#7c3aed" stroke-width="1.5" filter="url(#dropShadow)"/>
   <circle cx="1080" cy="570" r="12" fill="#7c3aed"/><text x="1080" y="574" text-anchor="middle" fill="#fff" font-family="Segoe UI" font-size="10" font-weight="700">7</text>
-  <text x="1100" y="564" fill="#ede9fe" font-family="Segoe UI" font-size="11" font-weight="600">Report & Ethics Compliance</text>
+  <text x="1100" y="564" fill="#ede9fe" font-family="Segoe UI" font-size="11" font-weight="600">Report &amp; Ethics Compliance</text>
   <text x="1100" y="580" fill="#94a3b8" font-family="Segoe UI" font-size="9">GLP report, IACUC review, AVMA euthanasia</text>
   <text x="1100" y="590" fill="#64748b" font-family="Segoe UI" font-size="8">Output: Preclinical safety report</text>
 
@@ -259,7 +259,7 @@
 
   <rect x="30" y="625" width="1340" height="65" rx="10" fill="url(#endGrad)" filter="url(#dropShadow)"/>
   <text x="700" y="650" text-anchor="middle" fill="#ffffff" font-family="Segoe UI" font-size="14" font-weight="700">All Experiment Types Converge to Common Output</text>
-  <text x="700" y="670" text-anchor="middle" fill="#bbf7d0" font-family="Segoe UI" font-size="11">Experiment Report (IMRaD format)  |  Score: Std Compliance 40% + Safety 25% + Data Integrity 20% + Efficiency 15%  |  Capability Radar Chart  |  Error Log & Improvement Plan</text>
+  <text x="700" y="670" text-anchor="middle" fill="#bbf7d0" font-family="Segoe UI" font-size="11">Experiment Report (IMRaD format)  |  Score: Std Compliance 40% + Safety 25% + Data Integrity 20% + Efficiency 15%  |  Capability Radar Chart  |  Error Log &amp; Improvement Plan</text>
 
   <!-- ====== STANDARDS REFERENCE BAR ====== -->
   <rect x="30" y="710" width="1340" height="180" rx="10" fill="#1e293b" stroke="#475569" stroke-width="1"/>
@@ -279,7 +279,7 @@
 
   <!-- Safety row -->
   <rect x="50" y="820" width="1300" height="55" rx="8" fill="#4a1e2d" fill-opacity="0.3" stroke="#dc2626" stroke-width="1"/>
-  <text x="70" y="840" fill="#f87171" font-family="Segoe UI" font-size="11" font-weight="700">SAFETY & ETHICS</text>
+  <text x="70" y="840" fill="#f87171" font-family="Segoe UI" font-size="11" font-weight="700">SAFETY &amp; ETHICS</text>
   <text x="70" y="856" fill="#94a3b8" font-family="Segoe UI" font-size="9">GHS Chemical Classification  |  EHS / OSHA Lab Safety  |  PPE Requirements  |  Biosafety Levels BSL-1 to BSL-4  |  3R Principles (Replace, Reduce, Refine)  |  IACUC Ethics Review  |  AVMA Euthanasia Guidelines</text>
 
   <!-- Footer -->
