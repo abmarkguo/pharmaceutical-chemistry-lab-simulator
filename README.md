@@ -58,7 +58,17 @@ Pharmaceutical chemistry education faces the "three highs and three difficulties
 | F7 | 实验考核与评分 | Assessment & Scoring | Teacher | Question bank + rubrics + diagnostic reports |
 | F8 | 实验报告撰写辅导 | Lab Report Writing Guidance | Student | Report template + data analysis guidance + self-check |
 
-![Eight Functions Architecture](docs/images/eight-functions-architecture.svg)
+![System Architecture](docs/images/architecture-overview-en.svg)
+
+> **Figure 1**: System architecture overview — Eight core functions organized into four functional zones (Experiment Simulation, Instructor Toolkit, Safety & Assessment, Dual-Standards Engine) with dual-role interface (Instructor / Student).
+
+---
+
+## 四种实验类型流程 | Four Experiment Type Workflows
+
+![Experiment Workflows](docs/images/experiment-workflows-en.svg)
+
+> **Figure 2**: Stage-by-stage workflow comparison for all four experiment types — Drug Synthesis (7 stages), Drug Analysis (6 stages), Pharmaceutics (8 stages), and Pharmacology/Toxicology (7 stages), each with standard references.
 
 ---
 
@@ -77,7 +87,9 @@ Pharmaceutical chemistry education faces the "three highs and three difficulties
 
 ## 渐进式决策模拟 | Progressive Decision Simulation
 
-![Simulation Workflow](docs/images/simulation-workflow.svg)
+![Simulation Engine](docs/images/simulation-engine-en.svg)
+
+> **Figure 3**: Progressive decision-based simulation engine — Three-phase workflow (Setup → Stage Loop → Final Assessment) with four-level feedback system (Correct → Hint → Correction → Safety Violation) and weighted scoring algorithm.
 
 ### 模拟流程结构 | Simulation Flow Structure
 
@@ -202,7 +214,9 @@ pharmaceutical-chemistry-lab-simulator/
 - **Safety**: GHS classification + GB/T 27476 + OSHA + BSL-1 to BSL-4
 - **Ethics**: 3R principles + IACUC + AVMA euthanasia guidelines
 
-![Standards Comparison](docs/images/standards-comparison.svg)
+![Standards Matrix](docs/images/standards-matrix-en.svg)
+
+> **Figure 4**: Dual-standard compliance matrix — Domestic (ChP/GMP/GLP/NMPA) and International (USP/EP/WHO-GMP/OECD-GLP/ICH) standards with ICH harmonization hub, safety & ethics framework, and cross-reference comparison table.
 
 ### Key Standards Comparison | 关键标准对比
 
