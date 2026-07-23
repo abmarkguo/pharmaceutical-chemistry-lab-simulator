@@ -1,0 +1,125 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 680">
+  <defs>
+    <linearGradient id="bgGrad" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#0d1117"/>
+      <stop offset="100%" stop-color="#161b22"/>
+    </linearGradient>
+    <linearGradient id="stageGrad" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0%" stop-color="#1e3a5f"/>
+      <stop offset="100%" stop-color="#264f7d"/>
+    </linearGradient>
+    <linearGradient id="decisionGrad" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0%" stop-color="#4a2d3e"/>
+      <stop offset="100%" stop-color="#6b3d52"/>
+    </linearGradient>
+    <linearGradient id="feedbackGrad" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0%" stop-color="#2d4a3e"/>
+      <stop offset="100%" stop-color="#3e6b56"/>
+    </linearGradient>
+    <linearGradient id="startGrad" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#1f6feb"/>
+      <stop offset="100%" stop-color="#1158c7"/>
+    </linearGradient>
+    <linearGradient id="endGrad" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#238636"/>
+      <stop offset="100%" stop-color="#1a7f37"/>
+    </linearGradient>
+    <filter id="glow">
+      <feGaussianBlur stdDeviation="2" result="coloredBlur"/>
+      <feMerge>
+        <feMergeNode in="coloredBlur"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+    <marker id="arrow" markerWidth="10" markerHeight="10" refX="9" refY="3" orient="auto">
+      <path d="M0,0 L0,6 L9,3 z" fill="#388bfd"/>
+    </marker>
+    <marker id="arrowRed" markerWidth="10" markerHeight="10" refX="9" refY="3" orient="auto">
+      <path d="M0,0 L0,6 L9,3 z" fill="#f85149"/>
+    </marker>
+    <marker id="arrowGreen" markerWidth="10" markerHeight="10" refX="9" refY="3" orient="auto">
+      <path d="M0,0 L0,6 L9,3 z" fill="#3fb950"/>
+    </marker>
+  </defs>
+  
+  <rect width="900" height="680" fill="url(#bgGrad)" rx="12"/>
+  
+  <!-- Title -->
+  <text x="450" y="35" text-anchor="middle" fill="#e6edf3" font-family="Segoe UI, Arial" font-size="20" font-weight="bold">Progressive Decision-Based Simulation Workflow</text>
+  <text x="450" y="55" text-anchor="middle" fill="#8b949e" font-family="Segoe UI, Arial" font-size="13">渐进式决策模拟流程</text>
+  
+  <!-- Start node -->
+  <rect x="350" y="75" width="200" height="40" rx="20" fill="url(#startGrad)" filter="url(#glow)"/>
+  <text x="450" y="100" text-anchor="middle" fill="#ffffff" font-family="Segoe UI, Arial" font-size="14" font-weight="bold">Experiment Start</text>
+  <line x1="450" y1="115" x2="450" y2="135" stroke="#388bfd" stroke-width="2" marker-end="url(#arrow)"/>
+  
+  <!-- Stage 1: Overview -->
+  <rect x="300" y="140" width="300" height="45" rx="8" fill="url(#stageGrad)" stroke="#388bfd" stroke-width="1.5"/>
+  <text x="450" y="160" text-anchor="middle" fill="#79c0ff" font-family="Segoe UI, Arial" font-size="13" font-weight="bold">Stage 1: Experiment Overview</text>
+  <text x="450" y="177" text-anchor="middle" fill="#8b949e" font-family="Segoe UI, Arial" font-size="10">Name / Type / Difficulty / Objectives / Standards</text>
+  <line x1="450" y1="185" x2="450" y2="205" stroke="#388bfd" stroke-width="2" marker-end="url(#arrow)"/>
+  
+  <!-- Stage 2-7 Loop indicator -->
+  <rect x="100" y="210" width="700" height="350" rx="10" fill="#161b22" stroke="#30363d" stroke-width="1.5" stroke-dasharray="8,4"/>
+  <text x="450" y="230" text-anchor="middle" fill="#6e7681" font-family="Segoe UI, Arial" font-size="12" font-style="italic">Stage Loop (6-8 stages)</text>
+  
+  <!-- Stage: Background + Instructions -->
+  <rect x="150" y="245" width="250" height="55" rx="8" fill="url(#stageGrad)" stroke="#388bfd" stroke-width="1"/>
+  <text x="275" y="265" text-anchor="middle" fill="#79c0ff" font-family="Segoe UI, Arial" font-size="12" font-weight="bold">Background + Instructions</text>
+  <text x="275" y="282" text-anchor="middle" fill="#8b949e" font-family="Segoe UI, Arial" font-size="10">Why this step / How to do it</text>
+  <text x="275" y="295" text-anchor="middle" fill="#f0883e" font-family="Segoe UI, Arial" font-size="10">⚠ Safety Alert</text>
+  
+  <!-- Decision Point -->
+  <polygon points="600,250 680,275 600,300 520,275" fill="url(#decisionGrad)" stroke="#f85149" stroke-width="1.5"/>
+  <text x="600" y="272" text-anchor="middle" fill="#ffa198" font-family="Segoe UI, Arial" font-size="11" font-weight="bold">Decision</text>
+  <text x="600" y="288" text-anchor="middle" fill="#ffa198" font-family="Segoe UI, Arial" font-size="11" font-weight="bold">Point</text>
+  <line x1="400" y1="272" x2="520" y2="275" stroke="#8b949e" stroke-width="1.5" marker-end="url(#arrow)"/>
+  
+  <!-- Correct path -->
+  <rect x="540" y="330" width="120" height="35" rx="6" fill="url(#feedbackGrad)" stroke="#3fb950" stroke-width="1"/>
+  <text x="600" y="352" text-anchor="middle" fill="#7ee787" font-family="Segoe UI, Arial" font-size="11">✓ Correct → Next</text>
+  <line x1="600" y1="300" x2="600" y2="330" stroke="#3fb950" stroke-width="2" marker-end="url(#arrowGreen)"/>
+  
+  <!-- Minor error path -->
+  <rect x="340" y="330" width="140" height="35" rx="6" fill="url(#feedbackGrad)" stroke="#d29922" stroke-width="1"/>
+  <text x="410" y="352" text-anchor="middle" fill="#e3b341" font-family="Segoe UI, Arial" font-size="11">⚠ Hint → Retry</text>
+  <line x1="540" y1="280" x2="410" y2="330" stroke="#d29922" stroke-width="1.5" marker-end="url(#arrow)"/>
+  
+  <!-- Serious error path -->
+  <rect x="160" y="330" width="140" height="35" rx="6" fill="url(#decisionGrad)" stroke="#f85149" stroke-width="1"/>
+  <text x="230" y="348" text-anchor="middle" fill="#ffa198" font-family="Segoe UI, Arial" font-size="10">✗ Consequence + Explain</text>
+  <text x="230" y="360" text-anchor="middle" fill="#ffa198" font-family="Segoe UI, Arial" font-size="10">→ Retry (score deduction)</text>
+  <line x1="520" y1="270" x2="300" y2="330" stroke="#f85149" stroke-width="1.5" marker-end="url(#arrowRed)"/>
+  
+  <!-- Dangerous path -->
+  <rect x="200" y="390" width="200" height="35" rx="6" fill="#3d1114" stroke="#f85149" stroke-width="2"/>
+  <text x="300" y="408" text-anchor="middle" fill="#ffa198" font-family="Segoe UI, Arial" font-size="11">🚨 Safety Warning + Emergency</text>
+  <text x="300" y="420" text-anchor="middle" fill="#ffa198" font-family="Segoe UI, Arial" font-size="10">Record violation → Safety training</text>
+  <line x1="230" y1="365" x2="280" y2="390" stroke="#f85149" stroke-width="1.5" marker-end="url(#arrowRed)"/>
+  
+  <!-- Knowledge Popup -->
+  <rect x="460" y="390" width="200" height="35" rx="6" fill="#1a2332" stroke="#a371f7" stroke-width="1"/>
+  <text x="560" y="408" text-anchor="middle" fill="#d2a8ff" font-family="Segoe UI, Arial" font-size="11">📖 Knowledge Popup</text>
+  <text x="560" y="420" text-anchor="middle" fill="#8b949e" font-family="Segoe UI, Arial" font-size="10">Chemistry / Pharmacology / Clinical</text>
+  <line x1="600" y1="365" x2="560" y2="390" stroke="#a371f7" stroke-width="1.5" marker-end="url(#arrow)"/>
+  
+  <!-- Stage Summary -->
+  <rect x="300" y="460" width="300" height="35" rx="6" fill="url(#stageGrad)" stroke="#388bfd" stroke-width="1"/>
+  <text x="450" y="478" text-anchor="middle" fill="#79c0ff" font-family="Segoe UI, Arial" font-size="11" font-weight="bold">Stage Summary → Key Points Review</text>
+  <text x="450" y="490" text-anchor="middle" fill="#6e7681" font-family="Segoe UI, Arial" font-size="10">→ Loop to next stage</text>
+  
+  <!-- Loop arrow back -->
+  <path d="M 750 480 Q 850 480 850 275 Q 850 272 400 272" stroke="#388bfd" stroke-width="1.5" fill="none" stroke-dasharray="5,3" opacity="0.4" marker-end="url(#arrow)"/>
+  <text x="860" y="380" fill="#6e7681" font-family="Segoe UI, Arial" font-size="9" transform="rotate(90, 860, 380)">Next Stage</text>
+  
+  <!-- Experiment End -->
+  <line x1="450" y1="560" x2="450" y2="580" stroke="#388bfd" stroke-width="2" marker-end="url(#arrow)"/>
+  
+  <rect x="250" y="585" width="400" height="50" rx="8" fill="url(#endGrad)" filter="url(#glow)"/>
+  <text x="450" y="608" text-anchor="middle" fill="#ffffff" font-family="Segoe UI, Arial" font-size="13" font-weight="bold">Experiment Summary</text>
+  <text x="450" y="625" text-anchor="middle" fill="#7ee787" font-family="Segoe UI, Arial" font-size="10">Score (40%+25%+20%+15%) / Capability Diagnosis / Error Review / Report Draft</text>
+  
+  <!-- Score formula -->
+  <rect x="150" y="650" width="600" height="22" rx="4" fill="#21262d" stroke="#30363d"/>
+  <text x="450" y="665" text-anchor="middle" fill="#8b949e" font-family="Segoe UI, Arial" font-size="10">Score = Standard Compliance (40%) + Safety Awareness (25%) + Data Integrity (20%) + Efficiency (15%)</text>
+</svg>
