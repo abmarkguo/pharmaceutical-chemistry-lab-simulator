@@ -1,0 +1,20 @@
+# Temporary files
+_*.py
+_*.tmp
+*.bak
+*.log
+
+# OS files
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# Editor files
+*.swp
+*.swo
+*~
+.vscode/
+.idea/
+
+# Upload scripts
+_upload_temp*
