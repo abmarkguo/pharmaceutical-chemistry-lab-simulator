@@ -83,10 +83,10 @@
   <!-- Stage Background + Instructions -->
   <rect x="120" y="200" width="320" height="80" rx="10" fill="url(#stageGrad)" stroke="#3b82f6" stroke-width="1.5" filter="url(#dropShadow)"/>
   <rect x="120" y="200" width="320" height="24" rx="10" fill="#2563eb" fill-opacity="0.3"/>
-  <text x="280" y="217" text-anchor="middle" fill="#bfdbfe" font-family="Segoe UI, Helvetica, Arial" font-size="11" font-weight="700">Stage N: Background & Instructions</text>
+  <text x="280" y="217" text-anchor="middle" fill="#bfdbfe" font-family="Segoe UI, Helvetica, Arial" font-size="11" font-weight="700">Stage N: Background &amp; Instructions</text>
   <text x="130" y="238" fill="#94a3b8" font-family="Segoe UI, Helvetica, Arial" font-size="9">• Scientific rationale for this step</text>
-  <text x="130" y="251" fill="#94a3b8" font-family="Segoe UI, Helvetica, Arial" font-size="9">• Detailed procedure with quantities & conditions</text>
-  <text x="130" y="264" fill="#94a3b8" font-family="Segoe UI, Helvetica, Arial" font-size="9">• Equipment setup & reagent preparation</text>
+  <text x="130" y="251" fill="#94a3b8" font-family="Segoe UI, Helvetica, Arial" font-size="9">• Detailed procedure with quantities &amp; conditions</text>
+  <text x="130" y="264" fill="#94a3b8" font-family="Segoe UI, Helvetica, Arial" font-size="9">• Equipment setup &amp; reagent preparation</text>
   <text x="130" y="274" fill="#fbbf24" font-family="Segoe UI, Helvetica, Arial" font-size="9" font-weight="600">⚠ Safety alert for this stage</text>
   <line x1="440" y1="240" x2="520" y2="240" stroke="#60a5fa" stroke-width="2" marker-end="url(#arrowB)"/>
 
@@ -169,7 +169,7 @@
 
   <!-- ====== PHASE 3: ASSESSMENT ====== -->
   <rect x="40" y="670" width="1120" height="210" rx="10" fill="#14532d" fill-opacity="0.05" stroke="#16a34a" stroke-width="1" stroke-dasharray="4,3"/>
-  <text x="55" y="690" fill="#4ade80" font-family="Segoe UI, Helvetica, Arial" font-size="11" font-weight="700">PHASE 3 — FINAL ASSESSMENT & REPORTING</text>
+  <text x="55" y="690" fill="#4ade80" font-family="Segoe UI, Helvetica, Arial" font-size="11" font-weight="700">PHASE 3 — FINAL ASSESSMENT &amp; REPORTING</text>
 
   <line x1="620" y1="485" x2="620" y2="695" stroke="#4ade80" stroke-width="2" marker-end="url(#arrowG)"/>
 
