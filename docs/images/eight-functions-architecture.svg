@@ -103,6 +103,6 @@
   <rect x="200" y="585" width="12" height="12" rx="2" fill="url(#cardGrad2)" stroke="#3fb950"/>
   <text x="218" y="595" fill="#8b949e" font-family="Segoe UI, Arial" font-size="10">Teacher Tools</text>
   <rect x="340" y="585" width="12" height="12" rx="2" fill="url(#cardGrad3)" stroke="#f85149"/>
-  <text x="358" y="595" fill="#8b949e" font-family="Segoe UI, Arial" font-size="10">Safety & Assessment</text>
+  <text x="358" y="595" fill="#8b949e" font-family="Segoe UI, Arial" font-size="10">Safety &amp; Assessment</text>
   <text x="870" y="595" text-anchor="end" fill="#6e7681" font-family="Segoe UI, Arial" font-size="10">OpenClaw Skill v1.0</text>
 </svg>
