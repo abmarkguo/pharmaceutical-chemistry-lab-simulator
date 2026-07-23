@@ -156,10 +156,14 @@ pharmaceutical-chemistry-lab-simulator/
 │   └── experiment-design-matrix-template.md  # Design matrix template
 │
 └── docs/
-    └── images/                       # SVG flowcharts
-        ├── eight-functions-architecture.svg
-        ├── simulation-workflow.svg
-        └── standards-comparison.svg
+    └── images/                       # SVG flowcharts (bilingual)
+        ├── architecture-overview-en.svg        # Fig.1 System architecture (EN)
+        ├── experiment-workflows-en.svg         # Fig.2 Four experiment workflows (EN)
+        ├── simulation-engine-en.svg            # Fig.3 Simulation engine (EN)
+        ├── standards-matrix-en.svg             # Fig.4 Standards matrix (EN)
+        ├── eight-functions-architecture.svg    # 八大功能架构图 (CN)
+        ├── simulation-workflow.svg             # 模拟流程图 (CN)
+        └── standards-comparison.svg            # 标准对比图 (CN)
 ```
 
 ---
