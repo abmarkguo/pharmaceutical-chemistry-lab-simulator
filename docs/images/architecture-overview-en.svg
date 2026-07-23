@@ -1,0 +1,329 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 850">
+  <defs>
+    <!-- Background gradient -->
+    <linearGradient id="bgGrad" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#0f172a"/>
+      <stop offset="100%" stop-color="#1e293b"/>
+    </linearGradient>
+
+    <!-- Zone backgrounds -->
+    <linearGradient id="zoneBlue" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#1e3a5f" stop-opacity="0.15"/>
+      <stop offset="100%" stop-color="#1e3a5f" stop-opacity="0.05"/>
+    </linearGradient>
+    <linearGradient id="zoneGreen" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#1a4d3a" stop-opacity="0.15"/>
+      <stop offset="100%" stop-color="#1a4d3a" stop-opacity="0.05"/>
+    </linearGradient>
+    <linearGradient id="zoneAmber" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#4a3a1e" stop-opacity="0.15"/>
+      <stop offset="100%" stop-color="#4a3a1e" stop-opacity="0.05"/>
+    </linearGradient>
+    <linearGradient id="zoneRed" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#4a1e2d" stop-opacity="0.15"/>
+      <stop offset="100%" stop-color="#4a1e2d" stop-opacity="0.05"/>
+    </linearGradient>
+
+    <!-- Node gradients -->
+    <linearGradient id="nodeBlue" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#2563eb"/>
+      <stop offset="100%" stop-color="#1d4ed8"/>
+    </linearGradient>
+    <linearGradient id="nodeGreen" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#16a34a"/>
+      <stop offset="100%" stop-color="#15803d"/>
+    </linearGradient>
+    <linearGradient id="nodeAmber" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#d97706"/>
+      <stop offset="100%" stop-color="#b45309"/>
+    </linearGradient>
+    <linearGradient id="nodeRed" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#dc2626"/>
+      <stop offset="100%" stop-color="#b91c1c"/>
+    </linearGradient>
+    <linearGradient id="nodePurple" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#7c3aed"/>
+      <stop offset="100%" stop-color="#6d28d9"/>
+    </linearGradient>
+    <linearGradient id="nodeCyan" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#0891b2"/>
+      <stop offset="100%" stop-color="#0e7490"/>
+    </linearGradient>
+    <linearGradient id="nodeTeal" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#0d9488"/>
+      <stop offset="100%" stop-color="#0f766e"/>
+    </linearGradient>
+    <linearGradient id="nodeOrange" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#ea580c"/>
+      <stop offset="100%" stop-color="#c2410c"/>
+    </linearGradient>
+
+    <!-- Core hub gradient -->
+    <radialGradient id="hubGrad" cx="50%" cy="40%" r="60%">
+      <stop offset="0%" stop-color="#3b82f6"/>
+      <stop offset="60%" stop-color="#2563eb"/>
+      <stop offset="100%" stop-color="#1e40af"/>
+    </radialGradient>
+
+    <!-- Shadow filter -->
+    <filter id="dropShadow" x="-10%" y="-10%" width="120%" height="120%">
+      <feGaussianBlur in="SourceAlpha" stdDeviation="3"/>
+      <feOffset dx="0" dy="2"/>
+      <feComponentTransfer><feFuncA type="linear" slope="0.4"/></feComponentTransfer>
+      <feMerge><feMergeNode/><feMergeNode in="SourceGraphic"/></feMerge>
+    </filter>
+    <filter id="hubGlow">
+      <feGaussianBlur stdDeviation="6" result="blur"/>
+      <feMerge><feMergeNode in="blur"/><feMergeNode in="SourceGraphic"/></feMerge>
+    </filter>
+
+    <!-- Arrow markers -->
+    <marker id="arrowBlue" markerWidth="8" markerHeight="8" refX="7" refY="3" orient="auto">
+      <path d="M0,0 L0,6 L7,3 z" fill="#60a5fa"/>
+    </marker>
+    <marker id="arrowGreen" markerWidth="8" markerHeight="8" refX="7" refY="3" orient="auto">
+      <path d="M0,0 L0,6 L7,3 z" fill="#4ade80"/>
+    </marker>
+    <marker id="arrowAmber" markerWidth="8" markerHeight="8" refX="7" refY="3" orient="auto">
+      <path d="M0,0 L0,6 L7,3 z" fill="#fbbf24"/>
+    </marker>
+    <marker id="arrowRed" markerWidth="8" markerHeight="8" refX="7" refY="3" orient="auto">
+      <path d="M0,0 L0,6 L7,3 z" fill="#f87171"/>
+    </marker>
+    <marker id="arrowPurple" markerWidth="8" markerHeight="8" refX="7" refY="3" orient="auto">
+      <path d="M0,0 L0,6 L7,3 z" fill="#a78bfa"/>
+    </marker>
+  </defs>
+
+  <!-- Background -->
+  <rect width="1200" height="850" fill="url(#bgGrad)" rx="16"/>
+
+  <!-- ====== TITLE ====== -->
+  <text x="600" y="42" text-anchor="middle" fill="#f1f5f9" font-family="Segoe UI, Helvetica, Arial" font-size="24" font-weight="700">Pharmaceutical Chemistry Lab Simulator</text>
+  <text x="600" y="66" text-anchor="middle" fill="#94a3b8" font-family="Segoe UI, Helvetica, Arial" font-size="14" font-weight="500">System Architecture — Eight Core Functions Across Four Functional Zones</text>
+
+  <!-- ====== ZONE 1: EXPERIMENT SIMULATION (Top-Left) ====== -->
+  <rect x="30" y="90" width="370" height="300" rx="14" fill="url(#zoneBlue)" stroke="#2563eb" stroke-width="1.5" stroke-dasharray="6,3" opacity="0.9"/>
+  <rect x="30" y="90" width="370" height="32" rx="14" fill="#2563eb" opacity="0.2"/>
+  <text x="50" y="112" fill="#60a5fa" font-family="Segoe UI, Helvetica, Arial" font-size="13" font-weight="700">ZONE 1 — EXPERIMENT SIMULATION ENGINE</text>
+  <text x="380" y="112" text-anchor="end" fill="#64748b" font-family="Segoe UI, Helvetica, Arial" font-size="11">4 Functions</text>
+
+  <!-- F1: Drug Synthesis -->
+  <rect x="50" y="135" width="160" height="110" rx="10" fill="#1e293b" stroke="#3b82f6" stroke-width="1.5" filter="url(#dropShadow)"/>
+  <rect x="50" y="135" width="160" height="28" rx="10" fill="url(#nodeBlue)"/>
+  <text x="130" y="154" text-anchor="middle" fill="#ffffff" font-family="Segoe UI, Helvetica, Arial" font-size="12" font-weight="700">F1 · Drug Synthesis</text>
+  <text x="60" y="178" fill="#cbd5e1" font-family="Segoe UI, Helvetica, Arial" font-size="10" font-weight="600">7-Stage Workflow:</text>
+  <text x="60" y="192" fill="#94a3b8" font-family="Segoe UI, Helvetica, Arial" font-size="9">Prep → Setup → Charging</text>
+  <text x="60" y="205" fill="#94a3b8" font-family="Segoe UI, Helvetica, Arial" font-size="9">→ Monitoring → Workup</text>
+  <text x="60" y="218" fill="#94a3b8" font-family="Segoe UI, Helvetica, Arial" font-size="9">→ Characterization → Cleanup</text>
+  <text x="60" y="237" fill="#fbbf24" font-family="Segoe UI, Helvetica, Arial" font-size="9" font-weight="600">Key: Reaction mechanisms</text>
+
+  <!-- F2: Drug Analysis -->
+  <rect x="220" y="135" width="160" height="110" rx="10" fill="#1e293b" stroke="#0891b2" stroke-width="1.5" filter="url(#dropShadow)"/>
+  <rect x="220" y="135" width="160" height="28" rx="10" fill="url(#nodeCyan)"/>
+  <text x="300" y="154" text-anchor="middle" fill="#ffffff" font-family="Segoe UI, Helvetica, Arial" font-size="12" font-weight="700">F2 · Drug Analysis</text>
+  <text x="230" y="178" fill="#cbd5e1" font-family="Segoe UI, Helvetica, Arial" font-size="10" font-weight="600">6-Stage Workflow:</text>
+  <text x="230" y="192" fill="#94a3b8" font-family="Segoe UI, Helvetica, Arial" font-size="9">Method → Sample Prep</text>
+  <text x="230" y="205" fill="#94a3b8" font-family="Segoe UI, Helvetica, Arial" font-size="9">→ Calibration → Assay</text>
+  <text x="230" y="218" fill="#94a3b8" font-family="Segoe UI, Helvetica, Arial" font-size="9">→ Data → Judgment</text>
+  <text x="230" y="237" fill="#22d3ee" font-family="Segoe UI, Helvetica, Arial" font-size="9" font-weight="600">Key: HPLC / GC / UV / Titration</text>
+
+  <!-- F3: Pharmaceutics -->
+  <rect x="50" y="260" width="160" height="110" rx="10" fill="#1e293b" stroke="#0d9488" stroke-width="1.5" filter="url(#dropShadow)"/>
+  <rect x="50" y="260" width="160" height="28" rx="10" fill="url(#nodeTeal)"/>
+  <text x="130" y="279" text-anchor="middle" fill="#ffffff" font-family="Segoe UI, Helvetica, Arial" font-size="12" font-weight="700">F3 · Pharmaceutics</text>
+  <text x="60" y="303" fill="#cbd5e1" font-family="Segoe UI, Helvetica, Arial" font-size="10" font-weight="600">8-Stage Workflow:</text>
+  <text x="60" y="317" fill="#94a3b8" font-family="Segoe UI, Helvetica, Arial" font-size="9">Formula → Process → GMP</text>
+  <text x="60" y="330" fill="#94a3b8" font-family="Segoe UI, Helvetica, Arial" font-size="9">→ Mfg → QC → Stability</text>
+  <text x="60" y="343" fill="#94a3b8" font-family="Segoe UI, Helvetica, Arial" font-size="9">→ Packaging → Release</text>
+  <text x="60" y="362" fill="#2dd4bf" font-family="Segoe UI, Helvetica, Arial" font-size="9" font-weight="600">Key: GMP compliance</text>
+
+  <!-- F4: Pharmacology / Toxicology -->
+  <rect x="220" y="260" width="160" height="110" rx="10" fill="#1e293b" stroke="#7c3aed" stroke-width="1.5" filter="url(#dropShadow)"/>
+  <rect x="220" y="260" width="160" height="28" rx="10" fill="url(#nodePurple)"/>
+  <text x="300" y="279" text-anchor="middle" fill="#ffffff" font-family="Segoe UI, Helvetica, Arial" font-size="12" font-weight="700">F4 · Pharm / Toxicology</text>
+  <text x="230" y="303" fill="#cbd5e1" font-family="Segoe UI, Helvetica, Arial" font-size="10" font-weight="600">7-Stage Workflow:</text>
+  <text x="230" y="317" fill="#94a3b8" font-family="Segoe UI, Helvetica, Arial" font-size="9">Design → Animal Model</text>
+  <text x="230" y="330" fill="#94a3b8" font-family="Segoe UI, Helvetica, Arial" font-size="9">→ Dosing → Observation</text>
+  <text x="230" y="343" fill="#94a3b8" font-family="Segoe UI, Helvetica, Arial" font-size="9">→ Analysis → Safety → Report</text>
+  <text x="230" y="362" fill="#a78bfa" font-family="Segoe UI, Helvetica, Arial" font-size="9" font-weight="600">Key: 3R principles / GLP</text>
+
+  <!-- ====== ZONE 2: TEACHER TOOLS (Top-Right) ====== -->
+  <rect x="420" y="90" width="370" height="300" rx="14" fill="url(#zoneGreen)" stroke="#16a34a" stroke-width="1.5" stroke-dasharray="6,3" opacity="0.9"/>
+  <rect x="420" y="90" width="370" height="32" rx="14" fill="#16a34a" opacity="0.2"/>
+  <text x="440" y="112" fill="#4ade80" font-family="Segoe UI, Helvetica, Arial" font-size="13" font-weight="700">ZONE 2 — INSTRUCTOR TOOLKIT</text>
+  <text x="770" y="112" text-anchor="end" fill="#64748b" font-family="Segoe UI, Helvetica, Arial" font-size="11">2 Functions</text>
+
+  <!-- F5: SOP Generation -->
+  <rect x="440" y="135" width="330" height="110" rx="10" fill="#1e293b" stroke="#16a34a" stroke-width="1.5" filter="url(#dropShadow)"/>
+  <rect x="440" y="135" width="330" height="28" rx="10" fill="url(#nodeGreen)"/>
+  <text x="605" y="154" text-anchor="middle" fill="#ffffff" font-family="Segoe UI, Helvetica, Arial" font-size="12" font-weight="700">F5 · Experiment Protocol & SOP Generation</text>
+  <text x="450" y="178" fill="#cbd5e1" font-family="Segoe UI, Helvetica, Arial" font-size="10" font-weight="600">Generates standardized documents:</text>
+  <text x="450" y="192" fill="#94a3b8" font-family="Segoe UI, Helvetica, Arial" font-size="9">  • Full SOP with standard clause references (ChP / USP / EP / ICH)</text>
+  <text x="450" y="205" fill="#94a3b8" font-family="Segoe UI, Helvetica, Arial" font-size="9">  • Reagent & equipment lists with quantities and specifications</text>
+  <text x="450" y="218" fill="#94a3b8" font-family="Segoe UI, Helvetica, Arial" font-size="9">  • Risk assessment matrix embedded in each protocol</text>
+  <text x="450" y="237" fill="#4ade80" font-family="Segoe UI, Helvetica, Arial" font-size="9" font-weight="600">Output: Printable SOP + Digital checklist + Safety data sheet</text>
+
+  <!-- F6: Lesson Plan & Assessment Design -->
+  <rect x="440" y="260" width="330" height="110" rx="10" fill="#1e293b" stroke="#16a34a" stroke-width="1.5" filter="url(#dropShadow)"/>
+  <rect x="440" y="260" width="330" height="28" rx="10" fill="url(#nodeGreen)"/>
+  <text x="605" y="279" text-anchor="middle" fill="#ffffff" font-family="Segoe UI, Helvetica, Arial" font-size="12" font-weight="700">F6 · Lesson Plan & Assessment Design</text>
+  <text x="450" y="303" fill="#cbd5e1" font-family="Segoe UI, Helvetica, Arial" font-size="10" font-weight="600">Instructor-facing curriculum tools:</text>
+  <text x="450" y="317" fill="#94a3b8" font-family="Segoe UI, Helvetica, Arial" font-size="9">  • Lesson plans aligned with course objectives and credit hours</text>
+  <text x="450" y="330" fill="#94a3b8" font-family="Segoe UI, Helvetica, Arial" font-size="9">  • Question bank: MCQ / short-answer / case-analysis / calculation</text>
+  <text x="450" y="343" fill="#94a3b8" font-family="Segoe UI, Helvetica, Arial" font-size="9">  • Four-level rubrics with weighted scoring (Std 40 / Safety 25 / Data 20 / Eff 15)</text>
+  <text x="450" y="362" fill="#4ade80" font-family="Segoe UI, Helvetica, Arial" font-size="9" font-weight="600">Output: Lesson plan + Question bank + Rubric + Capability radar chart</text>
+
+  <!-- ====== ZONE 3: SAFETY & ASSESSMENT (Bottom-Left) ====== -->
+  <rect x="30" y="410" width="370" height="230" rx="14" fill="url(#zoneRed)" stroke="#dc2626" stroke-width="1.5" stroke-dasharray="6,3" opacity="0.9"/>
+  <rect x="30" y="410" width="370" height="32" rx="14" fill="#dc2626" opacity="0.2"/>
+  <text x="50" y="432" fill="#f87171" font-family="Segoe UI, Helvetica, Arial" font-size="13" font-weight="700">ZONE 3 — SAFETY & ASSESSMENT</text>
+  <text x="380" y="432" text-anchor="end" fill="#64748b" font-family="Segoe UI, Helvetica, Arial" font-size="11">2 Functions</text>
+
+  <!-- F7: Safety Assessment -->
+  <rect x="50" y="455" width="160" height="170" rx="10" fill="#1e293b" stroke="#dc2626" stroke-width="1.5" filter="url(#dropShadow)"/>
+  <rect x="50" y="455" width="160" height="28" rx="10" fill="url(#nodeRed)"/>
+  <text x="130" y="474" text-anchor="middle" fill="#ffffff" font-family="Segoe UI, Helvetica, Arial" font-size="12" font-weight="700">F7 · Safety Assessment</text>
+  <text x="60" y="498" fill="#cbd5e1" font-family="Segoe UI, Helvetica, Arial" font-size="10" font-weight="600">Risk Matrix Engine:</text>
+  <text x="60" y="512" fill="#94a3b8" font-family="Segoe UI, Helvetica, Arial" font-size="9">• 5×5 hazard probability × severity</text>
+  <text x="60" y="525" fill="#94a3b8" font-family="Segoe UI, Helvetica, Arial" font-size="9">• PPE recommendations per step</text>
+  <text x="60" y="538" fill="#94a3b8" font-family="Segoe UI, Helvetica, Arial" font-size="9">• MSDS integration for all reagents</text>
+  <text x="60" y="551" fill="#94a3b8" font-family="Segoe UI, Helvetica, Arial" font-size="9">• Emergency response protocols</text>
+  <text x="60" y="564" fill="#94a3b8" font-family="Segoe UI, Helvetica, Arial" font-size="9">• GHS hazard classification labels</text>
+  <rect x="55" y="575" width="150" height="40" rx="6" fill="#7f1d1d" stroke="#f87171" stroke-width="1"/>
+  <text x="130" y="590" text-anchor="middle" fill="#fca5a5" font-family="Segoe UI, Helvetica, Arial" font-size="9" font-weight="700">SAFETY VETO RULE</text>
+  <text x="130" y="604" text-anchor="middle" fill="#fca5a5" font-family="Segoe UI, Helvetica, Arial" font-size="8">Critical violation = Auto-fail</text>
+
+  <!-- F8: Report Writing -->
+  <rect x="220" y="455" width="160" height="170" rx="10" fill="#1e293b" stroke="#ea580c" stroke-width="1.5" filter="url(#dropShadow)"/>
+  <rect x="220" y="455" width="160" height="28" rx="10" fill="url(#nodeOrange)"/>
+  <text x="300" y="474" text-anchor="middle" fill="#ffffff" font-family="Segoe UI, Helvetica, Arial" font-size="12" font-weight="700">F8 · Report Writing</text>
+  <text x="230" y="498" fill="#cbd5e1" font-family="Segoe UI, Helvetica, Arial" font-size="10" font-weight="600">Guided Report Builder:</text>
+  <text x="230" y="512" fill="#94a3b8" font-family="Segoe UI, Helvetica, Arial" font-size="9">• Structured template (IMRaD)</text>
+  <text x="230" y="525" fill="#94a3b8" font-family="Segoe UI, Helvetica, Arial" font-size="9">• Data tables & graphing guide</text>
+  <text x="230" y="538" fill="#94a3b8" font-family="Segoe UI, Helvetica, Arial" font-size="9">• Statistical analysis methods</text>
+  <text x="230" y="551" fill="#94a3b8" font-family="Segoe UI, Helvetica, Arial" font-size="9">• Error analysis & discussion</text>
+  <text x="230" y="564" fill="#94a3b8" font-family="Segoe UI, Helvetica, Arial" font-size="9">• Self-evaluation checklist</text>
+  <rect x="225" y="575" width="150" height="40" rx="6" fill="#431407" stroke="#fb923c" stroke-width="1"/>
+  <text x="300" y="590" text-anchor="middle" fill="#fdba74" font-family="Segoe UI, Helvetica, Arial" font-size="9" font-weight="700">AUTO-GRADING</text>
+  <text x="300" y="604" text-anchor="middle" fill="#fdba74" font-family="Segoe UI, Helvetica, Arial" font-size="8">Completeness + accuracy + format</text>
+
+  <!-- ====== ZONE 4: STANDARDS ENGINE (Bottom-Right) ====== -->
+  <rect x="420" y="410" width="370" height="230" rx="14" fill="url(#zoneAmber)" stroke="#d97706" stroke-width="1.5" stroke-dasharray="6,3" opacity="0.9"/>
+  <rect x="420" y="410" width="370" height="32" rx="14" fill="#d97706" opacity="0.2"/>
+  <text x="440" y="432" fill="#fbbf24" font-family="Segoe UI, Helvetica, Arial" font-size="13" font-weight="700">ZONE 4 — DUAL-STANDARDS COMPLIANCE ENGINE</text>
+  <text x="770" y="432" text-anchor="end" fill="#64748b" font-family="Segoe UI, Helvetica, Arial" font-size="11">Cross-cutting</text>
+
+  <!-- Domestic Standards -->
+  <rect x="440" y="455" width="155" height="170" rx="10" fill="#1e293b" stroke="#fbbf24" stroke-width="1.5" filter="url(#dropShadow)"/>
+  <rect x="440" y="455" width="155" height="26" rx="10" fill="url(#nodeAmber)"/>
+  <text x="517" y="473" text-anchor="middle" fill="#ffffff" font-family="Segoe UI, Helvetica, Arial" font-size="11" font-weight="700">Domestic Standards</text>
+  <text x="450" y="496" fill="#e2e8f0" font-family="Segoe UI, Helvetica, Arial" font-size="9" font-weight="600">Pharmacopoeia</text>
+  <text x="450" y="509" fill="#94a3b8" font-family="Segoe UI, Helvetica, Arial" font-size="9">ChP 2020 (Parts I–IV)</text>
+  <text x="450" y="525" fill="#e2e8f0" font-family="Segoe UI, Helvetica, Arial" font-size="9" font-weight="600">Manufacturing</text>
+  <text x="450" y="538" fill="#94a3b8" font-family="Segoe UI, Helvetica, Arial" font-size="9">GMP (2010 Rev.) + Appendices</text>
+  <text x="450" y="554" fill="#e2e8f0" font-family="Segoe UI, Helvetica, Arial" font-size="9" font-weight="600">Preclinical Research</text>
+  <text x="450" y="567" fill="#94a3b8" font-family="Segoe UI, Helvetica, Arial" font-size="9">GLP (2017 Rev.)</text>
+  <text x="450" y="583" fill="#e2e8f0" font-family="Segoe UI, Helvetica, Arial" font-size="9" font-weight="600">Regulation</text>
+  <text x="450" y="596" fill="#94a3b8" font-family="Segoe UI, Helvetica, Arial" font-size="9">NMPA + Drug Admin Law</text>
+  <text x="450" y="615" fill="#fbbf24" font-family="Segoe UI, Helvetica, Arial" font-size="8" font-style="italic">4900+ monographs</text>
+
+  <!-- International Standards -->
+  <rect x="605" y="455" width="170" height="170" rx="10" fill="#1e293b" stroke="#fbbf24" stroke-width="1.5" filter="url(#dropShadow)"/>
+  <rect x="605" y="455" width="170" height="26" rx="10" fill="url(#nodeAmber)"/>
+  <text x="690" y="473" text-anchor="middle" fill="#ffffff" font-family="Segoe UI, Helvetica, Arial" font-size="11" font-weight="700">International Standards</text>
+  <text x="615" y="496" fill="#e2e8f0" font-family="Segoe UI, Helvetica, Arial" font-size="9" font-weight="600">Pharmacopoeia</text>
+  <text x="615" y="509" fill="#94a3b8" font-family="Segoe UI, Helvetica, Arial" font-size="9">USP-NF / EP 11.0 / JP / BP</text>
+  <text x="615" y="525" fill="#e2e8f0" font-family="Segoe UI, Helvetica, Arial" font-size="9" font-weight="600">Manufacturing</text>
+  <text x="615" y="538" fill="#94a3b8" font-family="Segoe UI, Helvetica, Arial" font-size="9">WHO-GMP / cGMP / EU-GMP</text>
+  <text x="615" y="554" fill="#e2e8f0" font-family="Segoe UI, Helvetica, Arial" font-size="9" font-weight="600">Preclinical Research</text>
+  <text x="615" y="567" fill="#94a3b8" font-family="Segoe UI, Helvetica, Arial" font-size="9">OECD-GLP / FDA 21 CFR 58</text>
+  <text x="615" y="583" fill="#e2e8f0" font-family="Segoe UI, Helvetica, Arial" font-size="9" font-weight="600">Harmonization</text>
+  <text x="615" y="596" fill="#94a3b8" font-family="Segoe UI, Helvetica, Arial" font-size="9">ICH Q/S/E Series Guidelines</text>
+  <text x="615" y="615" fill="#fbbf24" font-family="Segoe UI, Helvetica, Arial" font-size="8" font-style="italic">Global harmonization</text>
+
+  <!-- ====== CENTRAL HUB ====== -->
+  <ellipse cx="1050" cy="365" rx="110" ry="80" fill="url(#hubGrad)" filter="url(#hubGlow)" stroke="#60a5fa" stroke-width="2"/>
+  <text x="1050" y="340" text-anchor="middle" fill="#ffffff" font-family="Segoe UI, Helvetica, Arial" font-size="16" font-weight="700">Progressive</text>
+  <text x="1050" y="360" text-anchor="middle" fill="#ffffff" font-family="Segoe UI, Helvetica, Arial" font-size="16" font-weight="700">Simulation</text>
+  <text x="1050" y="380" text-anchor="middle" fill="#bfdbfe" font-family="Segoe UI, Helvetica, Arial" font-size="13" font-weight="600">Engine</text>
+  <text x="1050" y="402" text-anchor="middle" fill="#93c5fd" font-family="Segoe UI, Helvetica, Arial" font-size="10">Decision-based · Trial-and-error</text>
+
+  <!-- Hub to Zones connections -->
+  <path d="M 940 340 Q 880 300 800 220" stroke="#60a5fa" stroke-width="1.5" fill="none" opacity="0.4" stroke-dasharray="4,3" marker-end="url(#arrowBlue)"/>
+  <path d="M 940 365 Q 880 365 800 365" stroke="#4ade80" stroke-width="1.5" fill="none" opacity="0.4" stroke-dasharray="4,3" marker-end="url(#arrowGreen)"/>
+  <path d="M 940 390 Q 880 480 800 530" stroke="#f87171" stroke-width="1.5" fill="none" opacity="0.4" stroke-dasharray="4,3" marker-end="url(#arrowRed)"/>
+  <path d="M 940 400 Q 880 520 800 550" stroke="#fbbf24" stroke-width="1.5" fill="none" opacity="0.4" stroke-dasharray="4,3" marker-end="url(#arrowAmber)"/>
+
+  <!-- ====== DUAL-ROLE INDICATOR (Right side) ====== -->
+  <rect x="830" y="90" width="340" height="220" rx="14" fill="url(#zoneGreen)" stroke="#16a34a" stroke-width="1.5" stroke-dasharray="6,3" opacity="0.9"/>
+  <rect x="830" y="90" width="340" height="32" rx="14" fill="#16a34a" opacity="0.2"/>
+  <text x="850" y="112" fill="#4ade80" font-family="Segoe UI, Helvetica, Arial" font-size="13" font-weight="700">DUAL-ROLE INTERFACE</text>
+
+  <!-- Instructor Role -->
+  <rect x="850" y="135" width="145" height="160" rx="10" fill="#1e293b" stroke="#16a34a" stroke-width="1.5" filter="url(#dropShadow)"/>
+  <rect x="850" y="135" width="145" height="26" rx="10" fill="url(#nodeGreen)"/>
+  <text x="922" y="153" text-anchor="middle" fill="#ffffff" font-family="Segoe UI, Helvetica, Arial" font-size="11" font-weight="700">INSTRUCTOR</text>
+  <text x="860" y="176" fill="#cbd5e1" font-family="Segoe UI, Helvetica, Arial" font-size="9" font-weight="600">Design & Assign:</text>
+  <text x="860" y="190" fill="#94a3b8" font-family="Segoe UI, Helvetica, Arial" font-size="9">• Create experiment tasks</text>
+  <text x="860" y="203" fill="#94a3b8" font-family="Segoe UI, Helvetica, Arial" font-size="9">• Generate SOPs & protocols</text>
+  <text x="860" y="216" fill="#94a3b8" font-family="Segoe UI, Helvetica, Arial" font-size="9">• Set difficulty levels</text>
+  <text x="860" y="229" fill="#94a3b8" font-family="Segoe UI, Helvetica, Arial" font-size="9">• Build question banks</text>
+  <text x="860" y="242" fill="#94a3b8" font-family="Segoe UI, Helvetica, Arial" font-size="9">• Configure safety rules</text>
+  <text x="860" y="255" fill="#94a3b8" font-family="Segoe UI, Helvetica, Arial" font-size="9">• Review student reports</text>
+  <text x="860" y="268" fill="#94a3b8" font-family="Segoe UI, Helvetica, Arial" font-size="9">• Track class analytics</text>
+  <text x="860" y="285" fill="#4ade80" font-family="Segoe UI, Helvetica, Arial" font-size="8" font-weight="600">Output: Curriculum materials</text>
+
+  <!-- Student Role -->
+  <rect x="1005" y="135" width="145" height="160" rx="10" fill="#1e293b" stroke="#3b82f6" stroke-width="1.5" filter="url(#dropShadow)"/>
+  <rect x="1005" y="135" width="145" height="26" rx="10" fill="url(#nodeBlue)"/>
+  <text x="1077" y="153" text-anchor="middle" fill="#ffffff" font-family="Segoe UI, Helvetica, Arial" font-size="11" font-weight="700">STUDENT</text>
+  <text x="1015" y="176" fill="#cbd5e1" font-family="Segoe UI, Helvetica, Arial" font-size="9" font-weight="600">Learn & Practice:</text>
+  <text x="1015" y="190" fill="#94a3b8" font-family="Segoe UI, Helvetica, Arial" font-size="9">• Pre-lab knowledge quiz</text>
+  <text x="1015" y="203" fill="#94a3b8" font-family="Segoe UI, Helvetica, Arial" font-size="9">• Interactive simulation</text>
+  <text x="1015" y="216" fill="#94a3b8" font-family="Segoe UI, Helvetica, Arial" font-size="9">• Decision-making practice</text>
+  <text x="1015" y="229" fill="#94a3b8" font-family="Segoe UI, Helvetica, Arial" font-size="9">• Trial-and-error learning</text>
+  <text x="1015" y="242" fill="#94a3b8" font-family="Segoe UI, Helvetica, Arial" font-size="9">• Real-time feedback</text>
+  <text x="1015" y="255" fill="#94a3b8" font-family="Segoe UI, Helvetica, Arial" font-size="9">• Report writing guidance</text>
+  <text x="1015" y="268" fill="#94a3b8" font-family="Segoe UI, Helvetica, Arial" font-size="9">• Progress review & revision</text>
+  <text x="1015" y="285" fill="#60a5fa" font-family="Segoe UI, Helvetica, Arial" font-size="8" font-weight="600">Output: Lab report + score</text>
+
+  <!-- ====== SAFETY & ETHICS BAR (Bottom) ====== -->
+  <rect x="830" y="330" width="340" height="310" rx="14" fill="url(#zoneRed)" stroke="#dc2626" stroke-width="1.5" stroke-dasharray="6,3" opacity="0.9"/>
+  <rect x="830" y="330" width="340" height="32" rx="14" fill="#dc2626" opacity="0.2"/>
+  <text x="850" y="352" fill="#f87171" font-family="Segoe UI, Helvetica, Arial" font-size="13" font-weight="700">SAFETY & ETHICS FRAMEWORK</text>
+
+  <rect x="850" y="375" width="150" height="60" rx="8" fill="#1e293b" stroke="#f87171" stroke-width="1"/>
+  <text x="925" y="394" text-anchor="middle" fill="#fca5a5" font-family="Segoe UI, Helvetica, Arial" font-size="10" font-weight="700">GHS Classification</text>
+  <text x="925" y="408" text-anchor="middle" fill="#94a3b8" font-family="Segoe UI, Helvetica, Arial" font-size="9">Hazard pictograms</text>
+  <text x="925" y="421" text-anchor="middle" fill="#94a3b8" font-family="Segoe UI, Helvetica, Arial" font-size="9">Signal words / H-codes</text>
+
+  <rect x="1005" y="375" width="150" height="60" rx="8" fill="#1e293b" stroke="#f87171" stroke-width="1"/>
+  <text x="1080" y="394" text-anchor="middle" fill="#fca5a5" font-family="Segoe UI, Helvetica, Arial" font-size="10" font-weight="700">EHS / OSHA</text>
+  <text x="1080" y="408" text-anchor="middle" fill="#94a3b8" font-family="Segoe UI, Helvetica, Arial" font-size="9">Lab safety management</text>
+  <text x="1080" y="421" text-anchor="middle" fill="#94a3b8" font-family="Segoe UI, Helvetica, Arial" font-size="9">PPE requirements</text>
+
+  <rect x="850" y="445" width="150" height="60" rx="8" fill="#1e293b" stroke="#f87171" stroke-width="1"/>
+  <text x="925" y="464" text-anchor="middle" fill="#fca5a5" font-family="Segoe UI, Helvetica, Arial" font-size="10" font-weight="700">Biosafety BSL-1~4</text>
+  <text x="925" y="478" text-anchor="middle" fill="#94a3b8" font-family="Segoe UI, Helvetica, Arial" font-size="9">Containment levels</text>
+  <text x="925" y="491" text-anchor="middle" fill="#94a3b8" font-family="Segoe UI, Helvetica, Arial" font-size="9">Decontamination</text>
+
+  <rect x="1005" y="445" width="150" height="60" rx="8" fill="#1e293b" stroke="#f87171" stroke-width="1"/>
+  <text x="1080" y="464" text-anchor="middle" fill="#fca5a5" font-family="Segoe UI, Helvetica, Arial" font-size="10" font-weight="700">3R Principles</text>
+  <text x="1080" y="478" text-anchor="middle" fill="#94a3b8" font-family="Segoe UI, Helvetica, Arial" font-size="9">Replace · Reduce · Refine</text>
+  <text x="1080" y="491" text-anchor="middle" fill="#94a3b8" font-family="Segoe UI, Helvetica, Arial" font-size="9">Animal welfare</text>
+
+  <rect x="850" y="515" width="305" height="50" rx="8" fill="#7f1d1d" stroke="#f87171" stroke-width="1.5"/>
+  <text x="1002" y="535" text-anchor="middle" fill="#fca5a5" font-family="Segoe UI, Helvetica, Arial" font-size="10" font-weight="700">IACUC + AVMA Guidelines</text>
+  <text x="1002" y="551" text-anchor="middle" fill="#fca5a5" font-family="Segoe UI, Helvetica, Arial" font-size="9">Ethics review · Euthanasia standards · Pain management</text>
+
+  <rect x="850" y="575" width="305" height="50" rx="8" fill="#1e293b" stroke="#fbbf24" stroke-width="1"/>
+  <text x="1002" y="595" text-anchor="middle" fill="#fbbf24" font-family="Segoe UI, Helvetica, Arial" font-size="10" font-weight="700">Scoring Algorithm</text>
+  <text x="1002" y="611" text-anchor="middle" fill="#cbd5e1" font-family="Segoe UI, Helvetica, Arial" font-size="9">Std Compliance 40% + Safety 25% + Data Integrity 20% + Efficiency 15%</text>
+
+  <!-- ====== FOOTER ====== -->
+  <text x="600" y="675" text-anchor="middle" fill="#64748b" font-family="Segoe UI, Helvetica, Arial" font-size="11" font-weight="500">8 Functions · 4 Experiment Types · 4-Dimensional Standards · 2 User Roles · Progressive Decision-Based Simulation</text>
+  <text x="600" y="695" text-anchor="middle" fill="#475569" font-family="Segoe UI, Helvetica, Arial" font-size="10">OpenClaw Skill v1.0  |  Pharmaceutical Chemistry Lab Simulator  |  MIT License</text>
+  <line x1="350" y1="710" x2="850" y2="710" stroke="#334155" stroke-width="0.5"/>
+  <text x="600" y="730" text-anchor="middle" fill="#475569" font-family="Segoe UI, Helvetica, Arial" font-size="9">ChP = Chinese Pharmacopoeia  |  USP = United States Pharmacopeia  |  EP = European Pharmacopoeia  |  ICH = International Council for Harmonisation  |  GMP = Good Manufacturing Practice  |  GLP = Good Laboratory Practice  |  NMPA = National Medical Products Administration  |  3R = Replace, Reduce, Refine</text>
+</svg>
